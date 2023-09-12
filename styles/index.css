@@ -2,12 +2,14 @@ body {
   background: #190415;
   color: #ffff;
 }
+
 /*ABOUT-SECTION*/
 .wrapper {
   padding-top: 25px;
   font-family: "Rubik", sans-serif;
   margin-bottom: 60px;
 }
+
 #daksha-title {
   font-weight: 900;
   font-size: 50px;
@@ -16,6 +18,7 @@ body {
 .card {
   background-color: #190415;
 }
+
 .desc {
   font-weight: 400;
 }
@@ -31,6 +34,7 @@ body {
   top: -50px;
   width: 50px;
 }
+
 .program:after {
   background: #190415;
   border-right: 5px solid white;
@@ -51,27 +55,36 @@ body {
   position: relative;
   margin-bottom: 10px;
 }
+
 .program i {
   font-size: 35px;
+  color: #ff9a92;
 }
+
 .program h3 {
   font-size: 16px;
   letter-spacing: 2px;
   margin-bottom: 15px;
 }
+
 .program p {
   /* line-height: 10px; */
   margin: 0;
+  padding: 0 5px;
 }
+
 .program:hover:before {
   border-color: #ff9a92;
 }
+
 .program:hover:after {
   border-color: #ff9a92;
 }
+
 .program:hover {
   color: #ff9a92;
 }
+
 /*ABOUT-SECTION ENDS*/
 
 /*CONTACT-SECTION*/
@@ -90,6 +103,7 @@ body {
   font-size: 50px;
   margin-bottom: 40px;
 }
+
 .neonText {
   padding: 10px;
   text-align: center;
@@ -103,6 +117,7 @@ body {
   text-decoration: none;
   color: white;
 }
+
 /*CONTACT SECTION ENDS*/
 /*FOOTER*/
 #footer-wrap {
@@ -147,10 +162,12 @@ footer .social-icons li a {
 footer .social-icons li a:hover {
   transform: translateY(-10px);
 }
+
 footer img {
   text-align: center;
   margin-top: 5px;
 }
+
 footer p {
   color: #190415;
   text-align: center;
@@ -174,18 +191,21 @@ footer .wave#wave1 {
   bottom: 0;
   animation: animateWave 4s linear infinite;
 }
+
 footer .wave#wave2 {
   z-index: 999;
   opacity: 0.5;
   bottom: 10px;
   animation: animateWave-02 4s linear infinite;
 }
+
 footer .wave#wave3 {
   z-index: 1000;
   opacity: 0.2;
   bottom: 15px;
   animation: animateWave-02 3s linear infinite;
 }
+
 footer .wave#wave4 {
   z-index: 999;
   opacity: 0.7;
@@ -197,16 +217,20 @@ footer .wave#wave4 {
   0% {
     background-position-x: 1000px;
   }
+
   100% {
     background-position-x: 0px;
   }
 }
+
 @keyframes animateWave-02 {
   0% {
     background-position-x: 0px;
   }
+
   100% {
     background-position-x: 1000px;
   }
 }
+
 /*FOOTER ENDS*/
