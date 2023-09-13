@@ -9,15 +9,15 @@ const sun = document.getElementById('Sun');
 const logo = document.getElementById('Logo');
 
 
-  window.addEventListener('scroll', () => {
-    let value = window.scrollY;
-    layer1.style.top = value * -1 + 'px';
-    layer4.style.top = value * -0.5 + 'px';
-    layer3.style.top = value * -0.25 + 'px';
+window.addEventListener('scroll', () => {
+  let value = window.scrollY;
+  layer1.style.top = value * -1 + 'px';
+  layer4.style.right = value * -0.25 + 'px';
+  layer3.style.left = value * -0.25 + 'px';
 
 
-    if (value < SCROLL_THRESHOLD) {
-      sun.style.top = value * 1 + 'px';
-    }
-  });
+  if (value < SCROLL_THRESHOLD) {
+    sun.style.top = value * 1 + 'px';
+  }
+});
 

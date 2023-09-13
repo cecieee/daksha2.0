@@ -64,17 +64,17 @@ header {
 
 #Sun {
     position: absolute;
-    width: 60%;
-    top: 10%;
-    left: 20%;
-    margin-top: 5%;
+    width: 45%;
+    top: 25%;
+    left: 25%;
+    margin-top: 15%;
 }
 
 
 #Logo {
     position: absolute;
     width: 40%;
-    top: 72%;
+    top: 13%;
     left: 31%;
 }
 
