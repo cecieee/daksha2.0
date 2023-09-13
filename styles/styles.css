@@ -24,10 +24,24 @@ header {
     z-index: 999;
 }
 
-.nav-link:hover {
-    scale: 1.1;
-    transition: ease-in-out 0.3s;
+.nav-link {
+    color: white;
 }
+
+.navi a:hover {
+    scale: 1.1;
+    color: #190415;
+    transition: ease-in-out 0.5s;
+}
+
+.navbar.scrolled {
+    background-color: #190415;
+}
+
+.navi.scrolled a:hover {
+    color: #ff9a92;
+}
+
 
 .parallax {
     width: 100vw;
@@ -64,17 +78,16 @@ header {
 
 #Sun {
     position: absolute;
-    width: 60%;
-    top: 10%;
-    left: 20%;
-    margin-top: 5%;
+    width: 45%;
+    top: 25%;
+    left: 25%;
+    margin-top: 15%;
 }
-
 
 #Logo {
     position: absolute;
     width: 40%;
-    top: 72%;
+    top: 13%;
     left: 31%;
 }
 
