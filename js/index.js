@@ -33,9 +33,9 @@ window.addEventListener('scroll', () => {
     nav.classList.remove('scrolled');
     
 
-  if (value < SCROLL_THRESHOLD) {
-    sun.style.top = value * 1 + 'px';
-  }
+    if (value < SCROLL_THRESHOLD) {
+      sun.style.top = value * 1 + 'px';
+    }
 });
 
 // Set the date we're counting down to

@@ -121,6 +121,7 @@ header {
     width: 100vw;
     background-color: #190415;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -134,7 +135,6 @@ header {
 .Days, .Hours, .Sec, .Min {
     height: 150px;
     width: 300px;
-    margin: 5%;
     background-color: transparent;
     color: white;
     text-align: center;
