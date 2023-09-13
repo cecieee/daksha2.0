@@ -1,6 +1,3 @@
-html {
-    background: #190415;
-}
 body{
 
     margin:0;
@@ -24,7 +21,7 @@ html {
     padding:2rem;
     padding-bottom: 100px;
     margin:0 auto;
-    max-width: 800px;
+    max-width: 740px;
     overflow: hidden;
    
 }
@@ -94,7 +91,7 @@ html {
     width:1rem;
     border-radius: 50%;
     background-color: #fff;
-    right:-6%;
+    right:-7%;
     top:18%;
     transform: translateX(-50%);
     z-index:2;
@@ -107,7 +104,7 @@ html {
     height: 0px;
     position: absolute;
     top:50%;
-    right:5px;
+    right:1px;
     width: 50px;
 }
 
