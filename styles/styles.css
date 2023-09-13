@@ -16,11 +16,6 @@ html {
     background-color: #190415;
 }
 
-.test {
-    height: 100vh;
-    background-color: #190415;
-}
-
 html::-webkit-scrollbar {
     display: none;
 }
