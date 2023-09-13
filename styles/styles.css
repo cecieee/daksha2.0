@@ -12,6 +12,7 @@ html {
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    scroll-behavior: smooth;
     background-color: #190415;
 }
 
@@ -65,29 +66,30 @@ header {
 #Layer-2 {
     width: 102%;
     position: absolute;
-    top: 20%;
+    top: 28%;
     left: -10px;
 }
 
 #Layer-1 {
     width: 102%;
     position: absolute;
-    top: -45%;
+    top: -5%;
     left: -10px;
+    z-index: 3;
 }
 
 #Sun {
     position: absolute;
-    width: 45%;
-    top: 25%;
-    left: 25%;
-    margin-top: 15%;
+    width: 42%;
+    top: 32%;
+    left: 28%;
+    margin-top: 16%;
 }
 
 #Logo {
     position: absolute;
     width: 40%;
-    top: 13%;
+    top: 16%;
     left: 31%;
 }
 
