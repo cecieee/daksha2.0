@@ -16,6 +16,11 @@ html {
     background-color: #190415;
 }
 
+.test {
+    height: 100vh;
+    background-color: #190415;
+}
+
 html::-webkit-scrollbar {
     display: none;
 }
@@ -64,14 +69,14 @@ header {
 }
 
 #Layer-2 {
-    width: 102%;
+    width: 102vw;
     position: absolute;
     top: 28%;
     left: -10px;
 }
 
 #Layer-1 {
-    width: 102%;
+    width: 102vw;
     position: absolute;
     top: -5%;
     left: -10px;
@@ -81,16 +86,18 @@ header {
 #Sun {
     position: absolute;
     width: 42%;
-    top: 32%;
+    top: 0;
     left: 28%;
     margin-top: 16%;
+    z-index: 0;
 }
 
 #Logo {
     position: absolute;
     width: 40%;
-    top: 16%;
+    top: 0%;
     left: 31%;
+    margin-top: 6%;
 }
 
 #Cloud-1 {
@@ -111,3 +118,94 @@ header {
     height: 100vh;
     width: 100vw;
 }
+
+@media (max-width: 768px) {
+
+    .parallax {
+        height: 80vh;
+        position: relative;
+    }
+
+    #Layer-4 {
+        width: 102vw;
+        position: relative;
+        top: 0%;
+        left: -1%;
+    }
+    
+    #Layer-3 {
+        width: 102vw;
+        position: absolute;
+        top: 0%;
+        left: -1%;
+    }
+    
+    #Layer-2 {
+        width: 102vw;
+        position: absolute;
+        top: 34%;
+        left: -1%;
+    }
+    
+    #Layer-1 {
+        width: 102vw;
+        position: absolute;
+        top: 0;
+        left: -1%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .parallax {
+        height: 60vh;
+        position: relative;
+    }
+
+    #Layer-4 {
+        width: 102vw;
+        position: absolute;
+        top: 0%;
+        left: -1%;
+    }
+    
+    #Layer-3 {
+        width: 102vw;
+        position: absolute;
+        top: 0%;
+        left: -1%;
+    }
+    
+    #Layer-2 {
+        width: 102vw;
+        position: absolute;
+        top: 30%;
+        left: -1%;
+    }
+    
+    #Layer-1 {
+        width: 102vw;
+        position: absolute;
+        top: 0;
+        left: -1%;
+    }
+
+}
+
+@media (max-width: 450px) {
+    
+    .parallax {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navbar{
+      margin-left: 0;
+      margin-right: 0;
+      display: flex;
+    }
+    .navbar-brand{
+        align-items: center;
+    }
+  }

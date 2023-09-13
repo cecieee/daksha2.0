@@ -1,4 +1,4 @@
-const SCROLL_THRESHOLD = 120;
+const SCROLL_THRESHOLD = 200;
 
 const text = document.getElementById('text');
 const layer1 = document.getElementById('Layer-1');
@@ -18,25 +18,20 @@ window.addEventListener('scroll', () => {
   const navbar = document.querySelector('.navi');
   const nav = document.getElementById('navbar')
 
-    if(value > 500) {
+    if(value > 600) {
       navbar.classList.add('scrolled');
-      logo.style.zIndex = '-1';
     }
     else {
       navbar.classList.remove('scrolled');
-      logo.style.position = 'fixed';
-      logo.style.zIndex = '1';
+      logo.style.top = value * 1 + 'px';
+      logo.style.scale = 1 + (value * 0.0012);
     }
 
     if(value > 850)
     nav.classList.add('scrolled');
     else
     nav.classList.remove('scrolled');
-
-
-    if(value > 200) {
-      layer2.style.zIndex = '2';
-    }
+    
 
   if (value < SCROLL_THRESHOLD) {
     sun.style.top = value * 1 + 'px';
