@@ -96,7 +96,7 @@ body {
 
 #contact {
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 
 #contact h2 {
@@ -178,13 +178,14 @@ footer p {
 
 footer .wave {
   position: absolute;
-  top: -100px;
+  /* top: -100px; */
+  top: -40px;
   left: 0;
   width: 100%;
   height: 100px;
   background: url(../assets/wave5.png);
   background-size: 1000px 100px;
-  /* background-size: 1000px 134px; */
+  margin-top: -59px;
 }
 
 footer .wave#wave1 {
