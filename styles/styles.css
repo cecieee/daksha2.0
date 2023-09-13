@@ -18,6 +18,10 @@ html {
     background-color: #190415;
 }
 
+body {
+    background-color: #190415;
+}
+
 html::-webkit-scrollbar {
     display: none;
 }
@@ -29,6 +33,12 @@ header {
 
 .nav-link {
     color: white;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .navi a:hover {
@@ -45,6 +55,13 @@ header {
     color: #ff9a92;
 }
 
+.navbar-toggler {
+    background-color: rgba(128, 128, 128, 0.45);
+}
+
+.show, .collapsing {
+    background-color: #190415;
+}
 
 .parallax {
     width: 100vw;
@@ -162,6 +179,11 @@ header {
     color: #fc6a03;
     font-weight: 800;
     overflow-wrap: 0;
+}
+
+.test {
+    height: 200vh;
+    background-color: #190415;
 }
 
 @media (max-width: 768px) {

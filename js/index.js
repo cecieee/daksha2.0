@@ -1,4 +1,15 @@
-const SCROLL_THRESHOLD = 200;
+var SCROLL_THRESHOLD = 200;
+
+if (window.matchMedia('(max-width: 900px)').matches) {
+  var SCROLL_THRESHOLD = 150;
+}
+if (window.matchMedia('(max-width: 601px)').matches) {
+  var SCROLL_THRESHOLD = 115;
+}
+if (window.matchMedia('(max-width: 450px)').matches) {
+  var SCROLL_THRESHOLD = 80;
+}
+
 
 const text = document.getElementById('text');
 const layer1 = document.getElementById('Layer-1');
@@ -18,7 +29,7 @@ window.addEventListener('scroll', () => {
   const navbar = document.querySelector('.navi');
   const nav = document.getElementById('navbar')
 
-    if(value > 600) {
+    if(value > SCROLL_THRESHOLD *2.6) {
       navbar.classList.add('scrolled');
     }
     else {
