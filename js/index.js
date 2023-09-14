@@ -12,7 +12,7 @@ if (window.matchMedia('(max-width: 450px)').matches) {
 
 
 const text = document.getElementById('text');
-const layer1 = document.getElementById('Layer-1');
+// const layer1 = document.getElementById('Layer-1');
 const layer2 = document.getElementById('Layer-2');
 const layer3 = document.getElementById('Layer-3');
 const layer4 = document.getElementById('Layer-4');
@@ -22,7 +22,7 @@ const logo = document.getElementById('Logo');
 
 window.addEventListener('scroll', () => {
   let value = window.scrollY;
-  layer1.style.top = value * -1 + 'px';
+  // layer1.style.top = value * -1 + 'px';
   layer4.style.right = value * -0.25 + 'px';
   layer3.style.left = value * -0.25 + 'px';
 
