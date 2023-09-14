@@ -96,7 +96,7 @@ body {
 
 #contact {
   margin-top: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 #contact h2 {
@@ -134,7 +134,7 @@ footer {
   align-items: center;
   width: 100%;
   background: #ff9a92;
-  height: 120px;
+  height: 150px;
   padding: 20px 50px;
   flex-direction: column;
 }
@@ -178,19 +178,18 @@ footer p {
 
 footer .wave {
   position: absolute;
-  /* top: -100px; */
-  top: -40px;
+  top: -100px;
   left: 0;
   width: 100%;
-  height: 100px;
-  background: url(../assets/wave5.png);
-  background-size: 1000px 100px;
   margin-top: -59px;
+  background: url(../assets/wave.svg);
+  /* background-size: 1000px 100px; */
+  background-size: 1000px 244px;
 }
 
 footer .wave#wave1 {
   z-index: 1000;
-  opacity:1;
+  opacity: 1;
   bottom: 0;
   animation: animateWave 4s linear infinite;
 }
@@ -199,21 +198,23 @@ footer .wave#wave2 {
   z-index: 999;
   opacity: 0.5;
   bottom: 10px;
-  animation: animateWave-02 4s linear infinite;
+  transform: scaleX(-1);
+  animation: animateWave 4s linear infinite;
 }
 
 footer .wave#wave3 {
   z-index: 1000;
   opacity: 0.2;
   bottom: 15px;
-  animation: animateWave-02 3s linear infinite;
+  animation: animateWave 3s linear infinite;
 }
 
 footer .wave#wave4 {
   z-index: 999;
-  opacity: 0.2;
+  opacity: 0.7;
+  transform: scaleX(-1);
   bottom: 20px;
-  animation: animateWave 2s linear infinite;
+  animation: animateWave 4s linear infinite;
 }
 
 @keyframes animateWave {
