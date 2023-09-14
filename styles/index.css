@@ -170,12 +170,8 @@ html {
     left: -1200px;
     position: absolute;
     top: -10px;
-    width: 50px;
-
-    
+    width: 50px;   
 }
-
-
 .tracks-inner-container:hover .tracks-bead{
     background-color: #ff9a92;
     cursor: pointer;
@@ -209,9 +205,6 @@ html {
     width: 50px;
 
 }
-/* .tracks-content-odd p{
-    margin-left:20px;
-} */
 .tracks-bead-odd{
     left:-6.5%;
 }
@@ -245,11 +238,6 @@ html {
     font-size: 25px;
 }
 
-/* .mimick{
-    width:100vw;
-    height:100vh;
-}  */
-
 
 @media only screen and (max-width:850px){
     .tracks-top-section{
@@ -262,9 +250,8 @@ html {
         position: relative ;
     }
     .tracks-content{
-        width:300px
+        width:500px;
     }
-
     .tracks-section{
         transform:translateX(100%);
         margin:50px 0;
@@ -280,7 +267,6 @@ html {
     .tracks-content p{
         margin-left:20px
     }
-
     .tracks-line{
         left:calc(3%);
     }
@@ -288,19 +274,14 @@ html {
         left:2px;
     }
     .tracks-content:after{
-        
         border-right: 0px;
         border-left:5px solid white;
         left: 20px;
-  
     }
     .tracks-content:before{
-
         border-left: 0px;
         border-right:5px solid white;
-        left: 300px;
-
-
+        left: 500px;
     }
     .tracks-content h2{
         margin-left:20px;
@@ -328,8 +309,6 @@ html {
     .tracks-container{
         padding:10px;
     }
-
-
 }
 @media only screen and (max-width:410px){
 
@@ -337,7 +316,6 @@ html {
         left: 75%;
     }
     .tracks-content p{
-
         margin-right:10px;
     }
 }
@@ -357,5 +335,38 @@ html {
     }
     .tracks-bead-odd{
         left: -4.5%;
+    }
+}
+
+@media only screen and (max-width:620px){
+    .tracks-content{
+        width:450px;
+    }
+    .tracks-content:before{
+        left:450px;
+    }
+}
+@media only screen and (max-width:540px){
+    .tracks-content{
+        width:350px;
+    }
+    .tracks-content:before{
+        left:350px;
+    }
+}
+@media only screen and (max-width:435px){
+    .tracks-content{
+        width:300px;
+    }
+    .tracks-content:before{
+        left:300px;
+    }
+}
+@media only screen and (max-width:365px){
+    .tracks-content{
+        width:275px;
+    }
+    .tracks-content:before{
+        left:275px;
     }
 }
