@@ -21,16 +21,18 @@ html {
     padding:2rem;
     padding-bottom: 100px;
     margin:0 auto;
-    max-width: 740px;
+    max-width: 1200px;
     overflow: hidden;
    
 }
 .tracks-top-section{
     text-align: center;
-    padding:0rem 0;
+
     max-width: 600px;
     margin:0 auto; 
+
 }
+
 .tracks-timeline{
     position:relative;
     min-height: 150px;
@@ -71,11 +73,10 @@ html {
     z-index:1;
     margin:100px 0;
     padding:1rem;
-    border-radius: 1rem;
-    align-items:center;
     min-height: 300px;
-    border: #fff;
     width: fit-content;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
 }
 .tracks-section:nth-child(odd){
     flex-direction: row-reverse;
@@ -83,7 +84,9 @@ html {
     position:absolute;
     right:0%;
     top:25%;
+    width:fit
 }
+
 .tracks-bead{
     position: absolute;
     display: block;
@@ -91,7 +94,7 @@ html {
     width:1rem;
     border-radius: 50%;
     background-color: #fff;
-    right:-7%;
+    right:-10%;
     top:18%;
     transform: translateX(-50%);
     z-index:2;
@@ -111,10 +114,7 @@ html {
 
 .tracks-content{
     position: relative;
-    width:300px;
-    /* border: #fff ;
-    border-width: 4px;
-    border-style: solid; */
+    width:500px;
     padding: 30px;
     
 }
@@ -137,7 +137,7 @@ html {
     border-bottom: 5px solid white;
     content: "";
     height: 100%;
-    right: 20px;
+    right: -10px;
     position: absolute;
     top: -10px;
     width: 50px;
@@ -145,7 +145,7 @@ html {
 .tracks-content p{
     margin-right:5px ;
 }
-.tracks-content-odd:after{
+/* .tracks-content-odd:after{
     background: transparent;
     border-right: 0px;
     border-top: 5px solid white;
@@ -157,7 +157,25 @@ html {
     top: -10px;
     width: 50px;
 
+} */
+
+
+.tracks-content:nth-child(odd)::after{
+    background: transparent;
+    border-right: 0px;
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+    content: "";
+    height: 100%;
+    left: -1200px;
+    position: absolute;
+    top: -10px;
+    width: 50px;
+
+    
 }
+
+
 .tracks-inner-container:hover .tracks-bead{
     background-color: #ff9a92;
     cursor: pointer;
@@ -178,24 +196,24 @@ html {
     border-color:  #ff9a92;
     cursor: pointer;
 }
-.tracks-content-odd:before{
+.tracks-content:nth-child(odd):before{
     background: transparent;
     border-left: 0px;
     border-bottom: 5px solid white;
     border-right: 5px solid white;
     content: "";
     height: 100%;
-    left: 300px;
     position: absolute;
+    right:0px;
     bottom: -50px;
     width: 50px;
 
 }
-.tracks-content-odd p{
+/* .tracks-content-odd p{
     margin-left:20px;
-}
+} */
 .tracks-bead-odd{
-    left:-1.5%;
+    left:-6.5%;
 }
 
 .tracks-bead-odd:after{
@@ -213,6 +231,7 @@ html {
     opacity:1;
 
 }
+
 .tracks-h1{
     font-weight: 900;
     font-family: "Rubik", sans-serif;
@@ -225,9 +244,6 @@ html {
     font-family: "Rubik", sans-serif;
     font-size: 25px;
 }
-.tracks-content-odd h2{
-    margin-left:20px;
-}
 
 /* .mimick{
     width:100vw;
@@ -236,13 +252,18 @@ html {
 
 
 @media only screen and (max-width:850px){
+    .tracks-top-section{
+        padding:3rem 0rem;
+    }
     .tracks-section{
         width:100%;
     }
     .tracks-section:nth-child(odd){
         position: relative ;
     }
-
+    .tracks-content{
+        width:300px
+    }
 
     .tracks-section{
         transform:translateX(100%);
@@ -284,6 +305,9 @@ html {
     .tracks-content h2{
         margin-left:20px;
     }
+    .tracks-bead-odd{
+        left:3.5%;
+    }
 
 }
 @media only screen and (max-width:650px){
@@ -315,5 +339,23 @@ html {
     .tracks-content p{
 
         margin-right:10px;
+    }
+}
+
+@media only screen and (min-width:850px)and (max-width:1195px){
+    .tracks-container{
+        max-width: 760px;
+    }
+    .tracks-bead{
+        right: -10%;
+    }
+    .tracks-bead::after{
+        width: 30px;
+    }
+    .tracks-content{
+        width: 300px;
+    }
+    .tracks-bead-odd{
+        left: -4.5%;
     }
 }
