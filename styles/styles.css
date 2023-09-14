@@ -70,11 +70,12 @@ header {
 }
 
 #Layer-4 {
-    width: 100vw;
+    width: 122vw;
     position: relative;
     top: 0%;
     bottom: 0;
-    margin-top: -5%;
+    margin-top: -2%;
+    left: -22vw;
 }
 
 #Layer-3 {
