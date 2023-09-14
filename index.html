@@ -2,87 +2,88 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Daksha 2.0</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Daksha 2.0</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
-  <header>
-    <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
-      <div class="container-fluid" id="container">
-        <img src="assets/daksha name2.svg" class="navbar-brand">
-        <button class="navbar-toggler fa fa-bars" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        </button>
-        <div class="collapse navbar-collapse justify-content-center navi" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Guests</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
-            </li>
-          </ul>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
+            <div class="container-fluid" id="container">
+                <img src="assets/daksha name2.svg" class="navbar-brand">
+                <button class="navbar-toggler fa fa-bars" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                </button>
+                <div class="collapse navbar-collapse justify-content-center navi" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Guests</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="parallax">
+        <img src="assets/homepage_layer_cloud1.svg" id="Cloud-1" alt="">
+        <img src="assets/homepage_layer_cloud1.svg" id="Cloud-2" alt="">
+        <img src="assets/homepage_layer_sun.svg" id="Sun" alt="">
+        <img src="assets/layer 3.png" id="Layer-4">
+        <img src="assets/layer2.png" id="Layer-3">
+        <img src="assets/layer1.png" id="Layer-2">
+        <!-- <img src="assets/homepage_layer1.svg" id="Layer-1"> -->
+        <img src="assets/daksha name.svg" alt="" id="Logo">
+    </section>
+    <section class="countdown">
+        <p id="demo"></p>
+        <div class="Days">
+            <p id="day"></p>
+            <p class="text">D A Y S</p>
         </div>
-      </div>
-    </nav>
-  </header>
-  <section class="parallax">
-    <img src="assets/homepage_layer_cloud1.svg" id="Cloud-1" alt="">
-    <img src="assets/homepage_layer_cloud1.svg" id="Cloud-2" alt="">
-    <img src="assets/homepage_layer_sun.svg" id="Sun" alt="">
-    <img src="assets/homepage_layer4.svg" id="Layer-4">
-    <img src="assets/homepage_layer3.svg" id="Layer-3">
-    <img src="assets/homepage_layer2.svg" id="Layer-2">
-    <img src="assets/homepage_layer1.svg" id="Layer-1">
-    <img src="assets/daksha name.svg" alt="" id="Logo">
-  </section>
-  <section class="countdown">
-    <p id="demo"></p>
-    <div class="Days">
-      <p id="day"></p>
-      <p class="text">D A Y S</p>
-    </div>
-    <div class="Hours">
-      <p id="hour"></p>
-      <p class="text">H O U R S</p>
-    </div>
-    <div class="Min">
-      <p id="min"></p>
-      <p class="text">M I N U T E S</p>
-    </div>
-    <div class="Sec">
-      <p id="sec"></p>
-      <p class="text">S E C O N D S</p>
-    </div>
-  </section>
-  <section class="test"></section>
-  <script defer src="./js/index.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+        <div class="Hours">
+            <p id="hour"></p>
+            <p class="text">H O U R S</p>
+        </div>
+        <div class="Min">
+            <p id="min"></p>
+            <p class="text">M I N U T E S</p>
+        </div>
+        <div class="Sec">
+            <p id="sec"></p>
+            <p class="text">S E C O N D S</p>
+        </div>
+    </section>
+    <section class="test"></section>
+    <script defer src="./js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
