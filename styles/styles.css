@@ -59,7 +59,8 @@ header {
     background-color: rgba(128, 128, 128, 0.45);
 }
 
-.show, .collapsing {
+.show,
+.collapsing {
     background-color: #190415;
 }
 
@@ -103,7 +104,7 @@ header {
     width: 42%;
     top: 0;
     left: 28%;
-    margin-top: 16%;
+    margin-top: 18%;
     z-index: 0;
 }
 
@@ -112,21 +113,46 @@ header {
     width: 40%;
     top: 0%;
     left: 31%;
-    margin-top: 6%;
+    margin-top: 10%;
 }
 
 #Cloud-1 {
     position: absolute;
     left: 70%;
     top: 10%;
+    width: 200px;
+    animation: cloudanimation2 100s linear infinite;
 }
 
 #Cloud-2 {
     position: absolute;
-    left: 20%;
-    top: 10%;
+    left: 10%;
+    top: 15%;
+    width: 200px;
+    animation: cloudanimation 150s linear infinite;
 }
 
+@keyframes cloudanimation {
+    0% {
+        left: 70%;
+    }
+
+    100% {
+        left: 0%;
+    }
+
+}
+
+@keyframes cloudanimation2 {
+    0% {
+        left: 10%;
+    }
+
+    100% {
+        left: 100%;
+    }
+
+}
 
 .content {
     background-color: #190415;
@@ -148,9 +174,12 @@ header {
     text-align: center;
     font-size: 60px;
     margin-top: 0px;
-  }
+}
 
-.Days, .Hours, .Sec, .Min {
+.Days,
+.Hours,
+.Sec,
+.Min {
     height: 150px;
     width: 300px;
     background-color: transparent;
@@ -159,8 +188,11 @@ header {
     position: relative;
 }
 
-#day, #hour, #sec, #min {
-    
+#day,
+#hour,
+#sec,
+#min {
+
     font-family: 'Montserrat', sans-serif;
     font-size: 6.5rem;
     font-weight: 1rem;
@@ -200,21 +232,21 @@ header {
         top: 0%;
         left: -1%;
     }
-    
+
     #Layer-3 {
         width: 102vw;
         position: absolute;
         top: 0%;
         left: -1%;
     }
-    
+
     #Layer-2 {
         width: 102vw;
         position: absolute;
         top: 34%;
         left: -1%;
     }
-    
+
     #Layer-1 {
         width: 102vw;
         position: absolute;
@@ -236,21 +268,21 @@ header {
         top: 0%;
         left: -1%;
     }
-    
+
     #Layer-3 {
         width: 102vw;
         position: absolute;
         top: 0%;
         left: -1%;
     }
-    
+
     #Layer-2 {
         width: 102vw;
         position: absolute;
         top: 30%;
         left: -1%;
     }
-    
+
     #Layer-1 {
         width: 102vw;
         position: absolute;
@@ -261,19 +293,20 @@ header {
 }
 
 @media (max-width: 450px) {
-    
+
     .parallax {
         height: 40vh;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .navbar{
-      margin-left: 0;
-      margin-right: 0;
-      display: flex;
+    .navbar {
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
     }
-    .navbar-brand{
+
+    .navbar-brand {
         align-items: center;
     }
-  }
+}
