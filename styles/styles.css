@@ -71,8 +71,9 @@ header {
 }
 
 .parallax {
-    width: 100vw;
-    background-image: linear-gradient(#FD7D7C 3%, #FC9E85 12%, #FFCBA4 20%)
+    width: 100%;
+    background-image: linear-gradient(#FD7D7C 3%, #FC9E85 12%, #FFCBA4 20%);
+    overflow-x: hidden;
 }
 
 #Layer-4 {
