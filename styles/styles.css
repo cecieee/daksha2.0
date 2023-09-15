@@ -172,7 +172,7 @@ header {
     background-color: #190415;
     margin-top: 10%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
 }
@@ -195,6 +195,10 @@ header {
     position: relative;
 }
 
+.test {
+    height: 200vh;
+}
+
 #day,
 #hour,
 #sec,
@@ -202,7 +206,6 @@ header {
 
     font-family: 'Montserrat', sans-serif;
     font-size: 6.5rem;
-    font-weight: 1rem;
     z-index: 1;
 }
 
@@ -219,6 +222,128 @@ header {
     color: #fc6a03;
     font-weight: 800;
     overflow-wrap: 0;
+}
+
+@media (max-width: 600px) {
+    #Layer-4 {
+        width: 122vw;
+        position: relative;
+        top: 0%;
+        bottom: 0;
+        margin-top: -2%;
+        left: -22vw;
+    }
+    
+    #Layer-3 {
+        width: 100vw;
+        position: absolute;
+        top: -2%;
+        left: -10px;
+    }
+    
+    #Layer-2 {
+        width: 102vw;
+        position: absolute;
+        top: 5%;
+        left: -10px;
+        margin-top: 8%;
+    }
+}
+
+@media (max-width: 700px) {
+    
+    #Layer-2 {
+        width: 102vw;
+        position: absolute;
+        top: 0%;
+        margin-top: 5%;
+        left: -10px;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    #day,
+    #hour,
+    #sec,
+    #min {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    #Layer-2 {
+        width: 102vw;
+        position: absolute;
+        top: 0%;
+        margin-top: 5%;
+        left: -10px;
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+
+    #day,
+    #hour,
+    #sec,
+    #min {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    #Layer-2 {
+        width: 102vw;
+        position: absolute;
+        top: 0%;
+        margin-top: 12%;
+        left: -10px;
+    }
+
+    #Layer-3 {
+        width: 100vw;
+        position: absolute;
+        top: -1%;
+        left: -10px;
+    }
+
+    .text {
+        font-size: 1.2rem;
+    }
+
+    #day,
+    #hour,
+    #sec,
+    #min {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    
+    #Layer-2 {
+        width: 102vw;
+        position: absolute;
+        top: -10%;
+        left: -10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .text {
+        font-size: 1.7rem;
+    }
+
+    #day,
+    #hour,
+    #sec,
+    #min {
+        font-size: 6rem;
+    }
 }
 
 @media (max-width: 490px) {

@@ -1,4 +1,4 @@
-var SCROLL_THRESHOLD = 200;
+var SCROLL_THRESHOLD = 220;
 var SCROLL_THRESHOLD_SUN = 150;
 
 if (window.matchMedia('(max-width: 900px)').matches) {
@@ -7,7 +7,7 @@ if (window.matchMedia('(max-width: 900px)').matches) {
 }
 if (window.matchMedia('(max-width: 601px)').matches) {
   var SCROLL_THRESHOLD = 65;
-  var SCROLL_THRESHOLD_SUN = 40;
+  var SCROLL_THRESHOLD_SUN = 35;
   document.getElementById('Cloud-1').style.width = '20%';
   document.getElementById('Cloud-2').style.width = '30%';
 }
