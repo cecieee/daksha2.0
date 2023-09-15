@@ -1,5 +1,5 @@
 var SCROLL_THRESHOLD = 200;
-var SCROLL_THRESHOLD_SUN = 200;
+var SCROLL_THRESHOLD_SUN = 150;
 
 if (window.matchMedia('(max-width: 900px)').matches) {
   var SCROLL_THRESHOLD = 105;
