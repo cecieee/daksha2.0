@@ -1,13 +1,26 @@
 var SCROLL_THRESHOLD = 200;
+var SCROLL_THRESHOLD_SUN = 200;
 
 if (window.matchMedia('(max-width: 900px)').matches) {
-  var SCROLL_THRESHOLD = 150;
+  var SCROLL_THRESHOLD = 105;
+  var SCROLL_THRESHOLD_SUN = 105;
 }
 if (window.matchMedia('(max-width: 601px)').matches) {
-  var SCROLL_THRESHOLD = 115;
+  var SCROLL_THRESHOLD = 65;
+  var SCROLL_THRESHOLD_SUN = 40;
 }
 if (window.matchMedia('(max-width: 450px)').matches) {
-  var SCROLL_THRESHOLD = 80;
+  var SCROLL_THRESHOLD = 50;
+  var SCROLL_THRESHOLD_SUN = 30;
+}
+if (window.matchMedia('(max-width: 400px)').matches) {
+  var SCROLL_THRESHOLD_SUN = 20;
+}
+if (window.matchMedia('(max-width: 350px)').matches) {
+  var SCROLL_THRESHOLD_SUN = 6;
+}
+if (window.matchMedia('(max-width: 300px)').matches) {
+  var SCROLL_THRESHOLD_SUN = 2;
 }
 
 
@@ -44,7 +57,7 @@ window.addEventListener('scroll', () => {
     nav.classList.remove('scrolled');
 
 
-  if (value < SCROLL_THRESHOLD) {
+  if (value < SCROLL_THRESHOLD_SUN) {
     sun.style.top = value * 1 + 'px';
   }
 });

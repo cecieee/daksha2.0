@@ -165,6 +165,7 @@ header {
     height: 40vh;
     width: 100vw;
     background-color: #190415;
+    margin-top: 10%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -215,88 +216,10 @@ header {
     overflow-wrap: 0;
 }
 
-.test {
-    height: 200vh;
-    background-color: #190415;
-}
-
-@media (max-width: 768px) {
-
-    .parallax {
-        height: 80vh;
-        position: relative;
-    }
-
-    #Layer-4 {
-        width: 102vw;
-        position: relative;
-        top: 0%;
-        left: -1%;
-    }
-
-    #Layer-3 {
-        width: 102vw;
-        position: absolute;
-        top: 0%;
-        left: -1%;
-    }
+@media (max-width: 490px) {
 
     #Layer-2 {
-        width: 102vw;
-        position: absolute;
-        top: 34%;
-        left: -1%;
-    }
-
-    #Layer-1 {
-        width: 102vw;
-        position: absolute;
-        top: 0;
-        left: -1%;
-    }
-}
-
-@media (max-width: 600px) {
-
-    .parallax {
-        height: 60vh;
-        position: relative;
-    }
-
-    #Layer-4 {
-        width: 102vw;
-        position: absolute;
-        top: 0%;
-        left: -1%;
-    }
-
-    #Layer-3 {
-        width: 102vw;
-        position: absolute;
-        top: 0%;
-        left: -1%;
-    }
-
-    #Layer-2 {
-        width: 102vw;
-        position: absolute;
-        top: 30%;
-        left: -1%;
-    }
-
-    #Layer-1 {
-        width: 102vw;
-        position: absolute;
-        top: 0;
-        left: -1%;
-    }
-
-}
-
-@media (max-width: 450px) {
-
-    .parallax {
-        height: 40vh;
+        width: 105vw;
     }
 }
 
