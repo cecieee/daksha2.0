@@ -8,13 +8,15 @@ if (window.matchMedia('(max-width: 900px)').matches) {
 if (window.matchMedia('(max-width: 601px)').matches) {
   var SCROLL_THRESHOLD = 65;
   var SCROLL_THRESHOLD_SUN = 40;
+  document.getElementById('Cloud-1').style.width = '20%';
+  document.getElementById('Cloud-2').style.width = '30%';
 }
 if (window.matchMedia('(max-width: 450px)').matches) {
   var SCROLL_THRESHOLD = 50;
   var SCROLL_THRESHOLD_SUN = 30;
 }
 if (window.matchMedia('(max-width: 400px)').matches) {
-  var SCROLL_THRESHOLD_SUN = 20;
+  var SCROLL_THRESHOLD_SUN = 8;
 }
 if (window.matchMedia('(max-width: 350px)').matches) {
   var SCROLL_THRESHOLD_SUN = 6;

@@ -16,11 +16,9 @@ html {
     scrollbar-width: none;
     scroll-behavior: smooth;
     background-color: #190415;
-    width: 100vw;
 }
 
 body {
-    overflow-x: hidden;
     background-color: #190415;
 }
 
@@ -129,7 +127,7 @@ header {
     left: 70%;
     top: 10%;
     width: 200px;
-    animation: cloudanimation2 100s linear infinite;
+    animation: cloudanimation2 150s linear infinite;
 }
 
 #Cloud-2 {
@@ -157,7 +155,7 @@ header {
     }
 
     100% {
-        left: 100%;
+        left: 60%;
     }
 
 }
