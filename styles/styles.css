@@ -258,6 +258,11 @@ header {
     flex-wrap: wrap;
 }
 
+.logos img:hover {
+    scale: 1.07;
+    transition: 0.5s ease-in-out;
+}
+
 @media (max-width: 600px) and (min-width: 500px) {
     #Layer-2 {
         margin-top: 10%;
