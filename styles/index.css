@@ -113,6 +113,7 @@ html {
     position: relative;
     width:500px;
     padding: 30px;
+    padding-right:0px;
     
     
 }
@@ -237,7 +238,7 @@ html {
         position: relative ;
     }
     .tracks-content{
-        width:500px;
+        width:525px;
     }
     .tracks-section{
         transform:translateX(100%);
@@ -327,7 +328,7 @@ html {
 
 @media only screen and (max-width:620px){
     .tracks-content{
-        width:450px;
+        width:475px;
     }
     .tracks-content:before{
         left:450px;
@@ -343,7 +344,7 @@ html {
 }
 @media only screen and (max-width:435px){
     .tracks-content{
-        width:300px;
+        width:330px;
     }
     .tracks-content:before{
         left:300px;
@@ -351,7 +352,7 @@ html {
 }
 @media only screen and (max-width:365px){
     .tracks-content{
-        width:275px;
+        width:310px;
     }
     .tracks-content:before{
         left:275px;
@@ -493,7 +494,7 @@ html {
         width:50%;
     }
     #guests-h1{
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 @media only screen and (max-width:680px){
@@ -515,7 +516,7 @@ html {
         font-size: 14px;
     }
     #guests-h1{
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
@@ -536,7 +537,7 @@ html {
     }
 }
 
-@media only screen and (max-width:430px){
+@media only screen and (max-width:490px){
     #guest-image{
         display: none;
         
