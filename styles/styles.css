@@ -170,7 +170,7 @@ header {
     height: 40vh;
     width: 100vw;
     background-color: #190415;
-    margin-top: 25%;
+    margin-top: 20%;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -198,7 +198,7 @@ header {
 .register {
     position: relative;
     left: 35vw;
-    top: 45vh;
+    top: 38vh;
     width: 50%;
 }
 
@@ -249,12 +249,11 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 8%;
 }
 
 .logos img {
-    width: 25%;
-    height: 40%;
+    width: 15%;
+    height: 20%;
     flex-wrap: wrap;
 }
 
