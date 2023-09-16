@@ -26,7 +26,6 @@ html {
 }
 .tracks-top-section{
     text-align: center;
-
     max-width: 600px;
     margin:0 auto; 
 
@@ -44,7 +43,6 @@ html {
     top:-50px;
     bottom:-50px;
     background-color: #fff;
-
 }
 .tracks-line:before,
 .tracks-line:after{
@@ -116,6 +114,10 @@ html {
     width:500px;
     padding: 30px;
     
+    
+}
+.tracks-content:nth-child(odd){
+    padding-right:20px ;
 }
 .tracks-content:before {
     background: transparent;
@@ -136,7 +138,7 @@ html {
     border-bottom: 5px solid white;
     content: "";
     height: 100%;
-    right: -10px;
+    right: 0px;
     position: absolute;
     top: -10px;
     width: 50px;
@@ -144,20 +146,6 @@ html {
 .tracks-content p{
     margin-right:5px ;
 }
-/* .tracks-content-odd:after{
-    background: transparent;
-    border-right: 0px;
-    border-top: 5px solid white;
-    border-left: 5px solid white;
-    content: "";
-    height: 100%;
-    left: 20px;
-    position: absolute;
-    top: -10px;
-    width: 50px;
-
-} */
-
 
 .tracks-content:nth-child(odd)::after{
     background: transparent;
@@ -199,7 +187,7 @@ html {
     content: "";
     height: 100%;
     position: absolute;
-    right:0px;
+
     bottom: -50px;
     width: 50px;
 
@@ -541,8 +529,6 @@ html {
     .guests-wave{
         top:-7vh;
     }
-
-
 }
 @media only screen and (max-width:450px){
     .guests-wave{
@@ -558,9 +544,7 @@ html {
     #guest-mobileview{
         display: block;
         height: 40vh;
-        max-width: 100%;
-
-   
+        max-width: 100%;   
     }
     .guests-wave{
         display: none;
