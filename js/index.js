@@ -12,11 +12,12 @@ if (window.matchMedia('(max-width: 601px)').matches) {
   document.getElementById('Cloud-2').style.width = '30%';
 }
 if (window.matchMedia('(max-width: 450px)').matches) {
-  var SCROLL_THRESHOLD = 50;
+  var SCROLL_THRESHOLD = 0;
   var SCROLL_THRESHOLD_SUN = 30;
 }
 if (window.matchMedia('(max-width: 400px)').matches) {
   var SCROLL_THRESHOLD_SUN = 8;
+  var SCROLL_THRESHOLD = 0;
 }
 if (window.matchMedia('(max-width: 350px)').matches) {
   var SCROLL_THRESHOLD_SUN = 6;
