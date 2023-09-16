@@ -219,49 +219,19 @@ header {
     justify-content: center;
     font-weight: 2rem;
     z-index: 2;
-    color: #fc6a03;
+    color: #fc6a03; 
     font-weight: 800;
     overflow-wrap: 0;
 }
 
-@media (max-width: 600px) {
-    #Layer-4 {
-        width: 122vw;
-        position: relative;
-        top: 0%;
-        bottom: 0;
-        margin-top: -2%;
-        left: -22vw;
-    }
-    
-    #Layer-3 {
-        width: 100vw;
-        position: absolute;
-        top: -2%;
-        left: -10px;
-    }
-    
+@media (max-width: 600px) and (min-width: 500px) {
     #Layer-2 {
-        width: 102vw;
-        position: absolute;
-        top: 5%;
-        left: -10px;
-        margin-top: 8%;
-    }
-}
-
-@media (max-width: 700px) {
-    
-    #Layer-2 {
-        width: 102vw;
-        position: absolute;
-        top: 0%;
-        margin-top: 5%;
-        left: -10px;
+        margin-top: 10%;
     }
 
     .text {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        margin-top: 40%;
     }
 
     #day,
@@ -272,18 +242,41 @@ header {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) and (min-width: 601px) {
     
     #Layer-2 {
         width: 102vw;
         position: absolute;
-        top: 0%;
-        margin-top: 5%;
+        top: -7%;
         left: -10px;
     }
 
     .text {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        margin-top: 30%;
+    }
+
+    #day,
+    #hour,
+    #sec,
+    #min {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 700px) {
+    
+    #Layer-2 {
+        width: 102vw;
+        position: absolute;
+        top: -5%;
+        left: -10px;
+    }
+
+
+    .text {
+        font-size: 1.55rem;
+        margin-top: 16%;
     }
 
     #day,
@@ -294,25 +287,15 @@ header {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 500px) and (min-width: 400px) {
     
     #Layer-2 {
-        width: 102vw;
-        position: absolute;
-        top: 0%;
         margin-top: 12%;
-        left: -10px;
-    }
-
-    #Layer-3 {
-        width: 100vw;
-        position: absolute;
-        top: -1%;
-        left: -10px;
     }
 
     .text {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
+        top: -40%;
     }
 
     #day,
@@ -323,7 +306,7 @@ header {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) and (min-width: 900px) {
     
     #Layer-2 {
         width: 102vw;
@@ -333,7 +316,25 @@ header {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 400px) and (min-width: 300px) {
+    #Layer-2 {
+        top: -15%;
+    }
+
+    .text {
+        font-size: 0.7rem;
+        top: -40%;
+    }
+
+    #day,
+    #hour,
+    #sec,
+    #min {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 801px) {
     .text {
         font-size: 1.7rem;
     }
@@ -343,6 +344,20 @@ header {
     #sec,
     #min {
         font-size: 6rem;
+    }
+
+    #Layer-2 {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 400px) {
+    #Layer-2 {
+        margin-top: 18%;
+    }
+
+    #Layer-3 {
+        margin-top: 0%;
     }
 }
 
