@@ -981,6 +981,10 @@ footer .wave#wave4 {
   cursor: pointer;
 }
 
+.tracks-inner-container:hover #tracks-conductor-1{
+  filter:none;
+}
+
 .tracks-content:nth-child(odd):before {
   background: transparent;
   border-left: 0px;
@@ -1017,17 +1021,44 @@ footer .wave#wave4 {
 
 .tracks-h1 {
   font-weight: 900;
-  font-family: "Rubik", sans-serif;
   font-size: 50px;
   text-align: center;
 
 }
 
 .tracks-h2 {
-  font-weight: 400;
-  font-family: "Rubik", sans-serif;
-  font-size: 25px;
+  font-weight: 600;
+
+  font-size: 30px;
 }
+.tracks-image-container{
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 10px;
+}
+
+#tracks-conductor-1{
+  width:80%;
+
+  padding: 10px 0px;
+  filter: grayscale(100%);
+
+  
+}
+
+.tracks-conductor-name{
+  font-size: 30px;
+  font-weight: 575;
+  writing-mode: sideways-lr;
+  margin: 10px 0px;
+}
+
+.tracks-conductor-details{
+  font-size: 15px ;
+  writing-mode: sideways-lr;
+}
+
 
 
 @media only screen and (max-width:850px) {
@@ -1169,6 +1200,13 @@ footer .wave#wave4 {
   .tracks-content:before {
     left: 350px;
   }
+  .tracks-image-container{
+    padding: 5px;
+  }
+  .tracks-conductor-name{
+    font-size: 22px;
+  }
+  
 }
 
 @media only screen and (max-width:435px) {
@@ -1179,6 +1217,7 @@ footer .wave#wave4 {
   .tracks-content:before {
     left: 300px;
   }
+
 }
 
 @media only screen and (max-width:365px) {
