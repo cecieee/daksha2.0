@@ -168,7 +168,6 @@ window.addEventListener('scroll', scrollHandler);
 
 var tracks_hover_tracker = document.getElementsByClassName('tracks-section');
 var tracks_timeline = document.getElementsByClassName('tracks-line');
-console.log(tracks_hover_tracker);
 for (var i = 0; i < tracks_hover_tracker.length; i++) {
     tracks_hover_tracker[i].addEventListener('mouseover', function () { changetimelinecolor('#ff9a92'); });
     tracks_hover_tracker[i].addEventListener('mouseout', function () { changetimelinecolor('#fff') });
