@@ -24,12 +24,12 @@ if (window.matchMedia('(max-width: 601px)').matches) {
     document.getElementById('Cloud-2').style.width = '30%';
 }
 if (window.matchMedia('(max-width: 450px)').matches) {
-    var SCROLL_THRESHOLD = 70;
-    var SCROLL_THRESHOLD_SUN = 30;
+    var SCROLL_THRESHOLD = 0;
+    var SCROLL_THRESHOLD_SUN = 0;
 }
 if (window.matchMedia('(max-width: 400px)').matches) {
     var SCROLL_THRESHOLD_SUN = 8;
-    var SCROLL_THRESHOLD = 60;
+    var SCROLL_THRESHOLD = 0;
 }
 if (window.matchMedia('(max-width: 350px)').matches) {
     var SCROLL_THRESHOLD_SUN = 6;
@@ -52,6 +52,7 @@ window.addEventListener('scroll', () => {
     let value = window.scrollY;
     // layer1.style.top = value * -1 + 'px';
     layer4.style.left = -22 + (value * 0.008) + 'vw';
+    if (window.matchMedia('(min-width: 450px)').matches)
     layer3.style.left = value * -0.25 + 'px';
 
     const navbar = document.querySelector('.navi');

@@ -574,6 +574,41 @@ header {
   }
 }
 
+@media (max-width: 450px) {
+  #Layer-2{
+    margin-top: 58vh;
+  }
+  #Layer-3{
+    margin-top: 42vh;
+    width: 140vw;
+    left: -10%;
+  }
+  #Layer-4 {
+    margin-top: 45vh;
+  }
+  #Sun {
+    width: 30%;
+    top: 25%;
+    left: 35%;
+  }
+  #Cloud-1 {
+    top: 30%;
+    width: 30%;
+  }
+
+  #Cloud-2 {
+    top: 40%;
+  }
+ .parallax {
+  background-image: linear-gradient(#FD7D7C 2%, #FC9E85 7%, #FFCBA4 20%);
+ }
+ #Logo {
+  width: 70vw;
+  left: 18vw;
+  margin-top: 15vh;
+ }
+}
+
 @media screen and (max-width: 992px) {
   .navbar {
     margin-left: 0;
