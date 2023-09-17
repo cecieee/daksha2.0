@@ -1,168 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;800;700;600;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;800;700;600;900&display=swap"
+        rel="stylesheet" />
     <title>Daksha 2.0</title>
-  </head>
+</head>
 
-  <body>
+<body>
+    <!-- header -->
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
+            <div class="container-fluid" id="container">
+                <img src="./assets/daksha-name2.webp" class="navbar-brand">
+                <button class="navbar-toggler fa fa-bars" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                </button>
+                <div class="collapse navbar-collapse justify-content-center navi" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Guests</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- parallax  -->
+    <section class="parallax">
+        <img src="assets/homepage_layer_cloud1.webp" id="Cloud-1" alt="">
+        <img src="assets/homepage_layer_cloud2.webp" id="Cloud-2" alt="">
+        <img src="assets/homepage_layer_sun.webp" id="Sun" alt="">
+        <img src="assets/layer3-2.webp" id="Layer-4">
+        <img src="assets/layer2.webp" id="Layer-3">
+        <img src="assets/layer1.webp" id="Layer-2">
+        <!-- <img src="assets/homepage_layer1.svg" id="Layer-1"> -->
+        <img src="assets/daksha name.webp" alt="" id="Logo">
+    </section>
+
+    <section class="register">
+        <button type="button" class="btn btn-primary">REGISTER NOW</button>
+    </section>
+    <section class="countdown">
+        <p id="demo"></p>
+        <div class="Days">
+            <p id="day"></p>
+            <p class="text">D A Y S</p>
+        </div>
+        <div class="Hours">
+            <p id="hour"></p>
+            <p class="text">H O U R S</p>
+        </div>
+        <div class="Min">
+            <p id="min"></p>
+            <p class="text">M I N U T E S</p>
+        </div>
+        <div class="Sec">
+            <p id="sec"></p>
+            <p class="text">S E C O N D S</p>
+        </div>
+    </section>
+    <section class="logos">
+        <img src="./assets/XR Horizon Logo white.png" alt="">
+        <img src="./assets/wie logo-WHITE.png" alt="">
+        <img src="./assets/ieee_sb_cec_logo_white.png" alt="">
+    </section>
+    <!-- about -->
+
     <section id="about">
-      <div class="about-section wrapper">
+        <div class="about-section wrapper">
+            <div class="container p-lg-2 px-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-12 mb-lg-0 mb-3">
+                        <div class="card border-0 text-sec">
+                            <h2 id="daksha-title">What is Daksha?</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 text-sec">
+                        <p class="desc">
+                            Daksha is a two-day all kerala technical event powered by IEEE
+                            Women In Engineering Affinity Group , College of Engineering
+                            Chengannur. The event, being a Technical Colloquium for both
+                            girls and boys, focuses on escalating their technical expertise
+                            and enabling networking and socializing with fellow participants
+                            from various engineering colleges across Kerala. The program
+                            looks forward to building a trailblazing platform for the
+                            student leaders to interact across regions to share their
+                            knowledge, find their best applications, cultivate different
+                            ideas and much more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container p-lg-2 px-5">
-          <div class="row align-items-center">
-            <div class="col-lg-5 col-md-12 mb-lg-0 mb-3">
-              <div class="card border-0 text-sec">
-                <h2 id="daksha-title">What is Daksha?</h2>
-              </div>
+            <div class="row pt-3 gy-5">
+                <div class="col-lg-3 col-sm-12 col-12 col-md-3 mx-auto">
+                    <div class="program text-center h-100">
+                        <i class="fa fa-laptop"></i>
+                        <h3>WORKSHOPS</h3>
+                        <p class="pg-desc">
+                            These will boost up the participation level in technical and
+                            managerial competition and will upgrade the creativity of the
+                            students.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 col-12 col-md-3 mx-auto">
+                    <div class="program text-center h-100">
+                        <i class="fa fa-microphone"></i>
+                        <h3>NON-TECHNICAL SESSIONS</h3>
+                        <p class="pg-desc">Sessions on improving Communicative skills.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 col-12 col-md-3 mx-auto">
+                    <div class="program text-center h-100">
+                        <i class="fa fa-users"></i>
+                        <h3>GROUP DISCUSSIONS</h3>
+                        <p class="pg-desc">
+                            The participants will be divided into smaller groups and a group
+                            discussion will be held similar to those during placements. The
+                            best performers will be given a chance to attend online mock
+                            interviews later.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12 col-12 col-md-3 mx-auto">
+                    <div class="program text-center h-100">
+                        <i class="fa fa-headphones"></i>
+                        <h3>CULTURAL ACTIVITIES</h3>
+                        <p class="pg-desc">
+                            A campfire along with music will be organized on the first day
+                            of the event.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-6 col-md-12 text-sec">
-              <p class="desc">
-                Daksha is a two-day all kerala technical event powered by IEEE
-                Women In Engineering Affinity Group , College of Engineering
-                Chengannur. The event, being a Technical Colloquium for both
-                girls and boys, focuses on escalating their technical expertise
-                and enabling networking and socializing with fellow participants
-                from various engineering colleges across Kerala. The program
-                looks forward to building a trailblazing platform for the
-                student leaders to interact across regions to share their
-                knowledge, find their best applications, cultivate different
-                ideas and much more.
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="container p-lg-2 px-5">
-        <div class="row pt-3 gy-5">
-          <div class="col-lg-3 col-sm-12 col-12 col-md-3 mx-auto">
-            <div class="program text-center h-100">
-              <i class="fa fa-laptop"></i>
-              <h3>WORKSHOPS</h3>
-              <p class="pg-desc">
-                These will boost up the participation level in technical and
-                managerial competition and will upgrade the creativity of the
-                students.
-              </p>
+    </section>
+    <!-- tracks -->
+    <section id="tracks">
+        <div class="tracks-container">
+            <div class="tracks-top-section">
+                <h1 class="tracks-h1">Tracks</h1>
+
             </div>
-          </div>
-          <div class="col-lg-3 col-sm-12 col-12 col-md-3 mx-auto">
-            <div class="program text-center h-100">
-              <i class="fa fa-microphone"></i>
-              <h3>NON-TECHNICAL SESSIONS</h3>
-              <p class="pg-desc">Sessions on improving Communicative skills.</p>
+            <div class="tracks-timeline">
+                <div class="tracks-line"></div>
+
+                <div class="tracks-section">
+                    <div class="tracks-inner-container">
+                        <div class="tracks-bead"></div>
+                        <div class="tracks-content">
+                            <h2 class="tracks-h2">Network design</h2>
+                            <p>Software testing is a method of determining whether the actual software product meets the
+                                expected requirements and ensuring that the software product is free of defects. It
+                                entails
+                                running software/system components through their paces using manual or automated tools
+                                to
+                                evaluate one or more properties of interest.
+
+                                This workshop will provide the participants with a strong base in the field. The
+                                workshop will
+                                be followed by a hackathon where the participants will put to test the knowledge they've
+                                acquired through the workshop.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tracks-section">
+                    <div class="tracks-inner-container">
+                        <div class="tracks-bead tracks-bead-odd"></div>
+                        <div class="tracks-content tracks-content-odd">
+                            <h2 class="tracks-h2">Digital Twin</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem temporibus corporis cumque
+                                repellendus. Illo veritatis porro dolore tenetur rerum eligendi molestiae qui! Quisquam
+                                impedit
+                                est ex perferendis illum laudantium. Odit?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tracks-section">
+                    <div class="tracks-inner-container">
+                        <div class="tracks-bead"></div>
+                        <div class="tracks-content">
+
+                            <h2 class="tracks-h2">Dialux</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem temporibus corporis cumque
+                                repellendus. Illo veritatis porro dolore tenetur rerum eligendi molestiae qui! Quisquam
+                                impedit
+                                est ex perferendis illum laudantium. Odit?</p>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-          </div>
-          <div class="col-lg-3 col-sm-12 col-12 col-md-3 mx-auto">
-            <div class="program text-center h-100">
-              <i class="fa fa-users"></i>
-              <h3>GROUP DISCUSSIONS</h3>
-              <p class="pg-desc">
-                The participants will be divided into smaller groups and a group
-                discussion will be held similar to those during placements. The
-                best performers will be given a chance to attend online mock
-                interviews later.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-sm-12 col-12 col-md-3 mx-auto">
-            <div class="program text-center h-100">
-              <i class="fa fa-headphones"></i>
-              <h3>CULTURAL ACTIVITIES</h3>
-              <p class="pg-desc">
-                A campfire along with music will be organized on the first day
-                of the event.
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
+    </section>
+
+    <!-- guest -->
+    <section id="guest">
+        <div class="guests-container">
+            <div class="guests-inner-container">
+                <img src="./assets/wave5-inv .webp" alt="" class="guests-wave">
+                <div class="guests-content">
+                    <h1 class="tracks-h1" id="guests-h1">Guest</h1>
+                    <div class="guests-mobile-container">
+                        <img src="./assets/wave5-inv .webp" alt="" class="guests-mobile-wave">
+                        <img src="/assets/Akhil.png" alt="" id="guest-mobileview">
+
+                    </div>
+                    <h1 class="tracks-h1" id="guest-name">Akhil M Mani</h1>
+                    <p>Lead Unity Developer </br> XR Horizon</p>
+                </div>
+                <img src="./assets/Akhil.png" alt="" id="guest-image">
+            </div>
+        </div>
     </section>
 
     <section id="contact">
-      <div class="contact wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="text-content text-center pb-2">
-                <h2>Contact Us</h2>
-              </div>
+        <div class="contact wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="text-content text-center pb-2">
+                            <h2>Contact Us</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="neonText">Phone Number</h3>
+                        <p style="color: white; font-size: 110%; font-weight: 700">
+                            Alby Johnson - 7012580316
+                        </p>
+                        <p style="color: white; font-size: 110%; font-weight: 700">
+                            Gouri M Menon - 9995903238
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="neonText">Email</h3>
+                        <p style="color: white; font-size: 110%; font-weight: 700">
+                            <a href="mailto:%20daksha@gmail.com">daksha@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="neonText">Phone Number</h3>
-              <p style="color: white; font-size: 110%; font-weight: 700">
-                Alby Johnson - 7012580316
-              </p>
-              <p style="color: white; font-size: 110%; font-weight: 700">
-                Gouri M Menon - 9995903238
-              </p>
-            </div>
-            <div class="col-md-6">
-              <h3 class="neonText">Email</h3>
-              <p style="color: white; font-size: 110%; font-weight: 700">
-                <a href="mailto:%20daksha@gmail.com">daksha@gmail.com</a>
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <div id="footer-wrap">
-      <footer>
-        <div class="waves">
-          <div class="wave" id="wave1"></div>
-          <div class="wave" id="wave2"></div>
-          <div class="wave" id="wave3"></div>
-          <div class="wave" id="wave4"></div>
-        </div>
-        <ul class="social-icons">
-          <li>
-            <a href="https://www.instagram.com/ieee_sb_cec/"
-              ><i class="fa fa-instagram"></i
-            ></a>
-            <a href="https://cecieee.org/"><i class="fa fa-google"></i></a>
-            <a href="https://www.linkedin.com/company/cecieee/"
-              ><i class="fa fa-linkedin"></i
-            ></a>
-            <a href="mailto:%20daksha@gmail.com"
-              ><i class="fa fa-envelope"></i
-            ></a>
-          </li>
-        </ul>
-        <img
-          src="./assets/daksha name2.svg"
-          alt="logo"
-          width="100px"
-          height="28px"
-        />
-        <p>Copyright&copy; <b>DAKSHA</b></p>
-      </footer>
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social-icons">
+                <li>
+                    <a href="https://www.instagram.com/ieee_sb_cec/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://cecieee.org/"><i class="fa fa-google"></i></a>
+                    <a href="https://www.linkedin.com/company/cecieee/"><i class="fa fa-linkedin"></i></a>
+                    <a href="mailto:%20daksha@gmail.com"><i class="fa fa-envelope"></i></a>
+                </li>
+            </ul>
+            <img src="./assets/daksha name2.svg" alt="logo" width="100px" height="28px" />
+            <p>Copyright&copy; <b>DAKSHA</b></p>
+        </footer>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
