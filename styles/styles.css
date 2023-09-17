@@ -256,6 +256,7 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding-bottom: 5%;
 }
 
 .logos img {
@@ -294,6 +295,7 @@ header {
 
   .btn {
     height: 7vh;
+    width: 70%;
   }
 
   .countdown {
@@ -341,6 +343,10 @@ header {
     position: absolute;
     margin-top: 0%;
     top: 110%;
+    padding-bottom: 5%;
+  }
+  .wrapper {
+    margin-top: 5%!important;
   }
 }
 
@@ -367,18 +373,32 @@ header {
   }
 
   .register {
-    top: 15vh;
+    top: 20vh;
     width: 50%;
   }
 
   .countdown {
     margin-top: 20%;
+    padding-bottom: 5%;
   }
 
   .logos {
     position: absolute;
-    margin-top: 0%;
     top: 130%;
+    padding-bottom: 10%;
+  }
+  .container {
+    padding-top: 15%;
+  }
+
+  .wrapper {
+    margin-bottom: 0px!important;
+  }
+}
+
+@media (max-width: 750px) and (min-width: 700px){
+  .logos {
+    top: 120%;
   }
 }
 
@@ -405,8 +425,6 @@ header {
   }
 
   #Logo {
-    position: fixed;
-    top: 26%;
     right: 6.5%;
   }
 
@@ -446,6 +464,10 @@ header {
   .countdown {
     margin-top: 20%;
   }
+
+  .logos {
+    padding-bottom: 5%;
+  }
 }
 
 @media (max-width: 400px) and (min-width: 300px) {
@@ -462,6 +484,7 @@ header {
     position: absolute;
     margin-top: 0%;
     top: 70%;
+    padding-top: 10%;
   }
 
   #day,
@@ -472,8 +495,6 @@ header {
   }
 
   #Logo {
-    position: fixed;
-    top: 24%;
     right: 6.5%;
   }
 
@@ -484,7 +505,7 @@ header {
   }
 
   .btn {
-    width: 32vw;
+    width: 35vw;
     height: 5vh;
     font-size: 0.8rem;
   }
@@ -511,16 +532,29 @@ header {
   }
 
   .register {
-    top: 15vh;
+    top: 28vh;
     width: 50%;
+    padding-bottom: 5%;
   }
 
   .countdown {
     margin-top: 20%;
   }
+
+  .logos {
+    padding-bottom: 5%;
+  }
 }
 
-@media (max-width: 1100px) and (min-width: 1000px) {}
+@media (max-width: 1100px) and (min-width: 1000px) {
+  .register {
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+  .logos {
+    padding-bottom: 5%;
+  }
+}
 
 @media (max-width: 400px) {
   #Layer-2 {
