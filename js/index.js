@@ -1,19 +1,31 @@
 var SCROLL_THRESHOLD = 220;
 var SCROLL_THRESHOLD_SUN = 150;
 
+if (window.matchMedia('(max-width: 1000px)').matches) {
+    var SCROLL_THRESHOLD = 155;
+    var SCROLL_THRESHOLD_SUN = 105;
+}
 if (window.matchMedia('(max-width: 900px)').matches) {
-    var SCROLL_THRESHOLD = 105;
+    var SCROLL_THRESHOLD = 145;
+    var SCROLL_THRESHOLD_SUN = 105;
+}
+if (window.matchMedia('(max-width: 800px)').matches) {
+    var SCROLL_THRESHOLD = 125;
+    var SCROLL_THRESHOLD_SUN = 105;
+}
+if (window.matchMedia('(max-width: 700px)').matches) {
+    var SCROLL_THRESHOLD = 110;
     var SCROLL_THRESHOLD_SUN = 105;
 }
 if (window.matchMedia('(max-width: 601px)').matches) {
-    var SCROLL_THRESHOLD = 65;
+    var SCROLL_THRESHOLD = 95;
     var SCROLL_THRESHOLD_SUN = 35;
     document.getElementById('Cloud-1').style.width = '20%';
     document.getElementById('Cloud-2').style.width = '30%';
 }
 if (window.matchMedia('(max-width: 450px)').matches) {
     var SCROLL_THRESHOLD = 0;
-    var SCROLL_THRESHOLD_SUN = 30;
+    var SCROLL_THRESHOLD_SUN = 0;
 }
 if (window.matchMedia('(max-width: 400px)').matches) {
     var SCROLL_THRESHOLD_SUN = 8;
@@ -40,6 +52,7 @@ window.addEventListener('scroll', () => {
     let value = window.scrollY;
     // layer1.style.top = value * -1 + 'px';
     layer4.style.left = -22 + (value * 0.008) + 'vw';
+    if (window.matchMedia('(min-width: 450px)').matches)
     layer3.style.left = value * -0.25 + 'px';
 
     const navbar = document.querySelector('.navi');
