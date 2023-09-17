@@ -1260,7 +1260,14 @@ footer .wave#wave4 {
   .tracks-content:before {
     left: 450px;
   }
+  #tracks-conductor-1{
+
+    filter: none;
+  
+    
+  }
 }
+
 
 @media only screen and (max-width:540px) {
   .tracks-content {
@@ -1287,7 +1294,6 @@ footer .wave#wave4 {
   .tracks-content:before {
     left: 300px;
   }
-
 }
 
 @media only screen and (max-width:365px) {
