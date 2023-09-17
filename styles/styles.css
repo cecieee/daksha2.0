@@ -1120,15 +1120,29 @@ footer .wave#wave4 {
 .tracks-conductor-name{
   font-size: 30px;
   font-weight: 575;
-  writing-mode: sideways-lr;
-  margin: 10px 0px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  margin-left: -30px;
+  transform: rotate(270deg);
+  transform-origin: 0 0;
 }
-
 .tracks-conductor-details{
   font-size: 15px ;
-  writing-mode: sideways-lr;
-}
 
+
+  position: absolute;
+  bottom: 0px;
+  left: 50px;
+  margin-left: -30px;
+  transform: rotate(270deg);
+  transform-origin: 0 0;
+}
+#speaker-1-details{
+  bottom:-20px;
+}
 
 
 @media only screen and (max-width:850px) {
@@ -1194,7 +1208,12 @@ footer .wave#wave4 {
   .tracks-bead-odd {
     left: 3.5%;
   }
-
+  .tracks-conductor-name{
+    left:40px;
+  }
+  .tracks-conductor-details{
+    left:70px;
+  }
 }
 
 @media only screen and (max-width:650px) {
@@ -1282,6 +1301,10 @@ footer .wave#wave4 {
   }
   .tracks-conductor-name{
     font-size: 22px;
+  }
+  #speaker-1-details{
+    font-size: 13px;
+    bottom:-20px;
   }
   
 }
