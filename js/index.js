@@ -31,12 +31,6 @@ if (window.matchMedia('(max-width: 400px)').matches) {
     var SCROLL_THRESHOLD_SUN = 8;
     var SCROLL_THRESHOLD = 0;
 }
-if (window.matchMedia('(max-width: 350px)').matches) {
-    var SCROLL_THRESHOLD_SUN = 6;
-}
-if (window.matchMedia('(max-width: 300px)').matches) {
-    var SCROLL_THRESHOLD_SUN = 2;
-}
 
 
 const text = document.getElementById('text');
@@ -50,6 +44,7 @@ const logo = document.getElementById('Logo');
 
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
+
     // layer1.style.top = value * -1 + 'px';
     layer4.style.left = -22 + (value * 0.008) + 'vw';
     if (window.matchMedia('(min-width: 450px)').matches)
@@ -73,7 +68,7 @@ window.addEventListener('scroll', () => {
         nav.classList.remove('scrolled');
 
 
-    if (value < SCROLL_THRESHOLD_SUN) {
+    if (value < SCROLL_THRESHOLD_SUN && window.matchMedia('(min-width: 450px)').matches) {
         sun.style.top = value * 1 + 'px';
     }
 });
