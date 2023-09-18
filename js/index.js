@@ -71,7 +71,7 @@ window.addEventListener('scroll', () => {
     }
     else {
         navbar.classList.remove('scrolled');
-        logo.style.top = value * 0.14 + 'vh';
+        logo.style.top = value * 0.155 + 'vh';
         logo.style.scale = 1 + (value * 0.0008);
     }
 
