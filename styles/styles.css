@@ -924,6 +924,7 @@ footer .wave#wave4 {
   top: -50px;
   bottom: -50px;
   background-color: #fff;
+  transition:0.5s ease-in-out;
 }
 
 .tracks-line:before,
@@ -1049,31 +1050,37 @@ footer .wave#wave4 {
 }
 
 .tracks-inner-container:hover .tracks-bead {
+  transition: 0.5s ease-in-out;
   background-color: #ff9a92;
   cursor: pointer;
 }
 
 .tracks-inner-container:hover .tracks-bead::after {
+  transition: 0.5s ease-in-out;
   border-bottom: 2px solid #ff9a92;
   cursor: pointer;
 }
 
 .tracks-inner-container:hover .tracks-content {
+  transition: 0.5s ease-in-out;
   cursor: pointer;
   color: #ff9a92;
 }
 
 .tracks-inner-container:hover .tracks-content::after {
+  transition: 0.5s ease-in-out;
   border-color: #ff9a92;
   cursor: pointer;
 }
 
 .tracks-inner-container:hover .tracks-content::before {
+  transition: 0.5s ease-in-out;
   border-color: #ff9a92;
   cursor: pointer;
 }
 
 .tracks-inner-container:hover #tracks-conductor-1{
+  transition: 0.5s ease-in-out;
   filter:none;
 }
 
