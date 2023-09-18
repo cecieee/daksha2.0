@@ -217,13 +217,18 @@ header {
   height: 8vh;
   font-size: 1.2rem;
   font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fc6a03;
+  text-decoration: none;
   color: white;
   border: #190415;
 }
 
 .btn:hover {
   background-color: #190415;
+  text-decoration: none;
   color: #fc6a03;
   border: 1px solid #fc6a03;
   transition: 0.5s ease-in-out;
