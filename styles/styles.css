@@ -345,6 +345,7 @@ header {
     top: 110%;
     padding-bottom: 5%;
   }
+
   .wrapper {
     margin-top: 5% !important;
   }
@@ -385,6 +386,7 @@ header {
     top: 130%;
     padding-bottom: 10%;
   }
+
   .container {
     padding-top: 15%;
   }
@@ -547,6 +549,7 @@ header {
     margin-top: 5%;
     padding-bottom: 5%;
   }
+
   .logos {
     padding-bottom: 5%;
   }
@@ -573,9 +576,11 @@ header {
     margin-top: 58vh;
     width: 103vw;
   }
+
   #Layer-3 {
     display: none;
   }
+
   #Layer3-2 {
     width: 100%;
     position: absolute;
@@ -583,14 +588,17 @@ header {
     left: -10%;
     top: 43vh;
   }
+
   #Layer-4 {
     margin-top: 45vh;
   }
+
   #Sun {
     width: 30%;
     top: 35%;
     left: 35%;
   }
+
   #Cloud-1 {
     top: 30%;
     width: 30%;
@@ -599,23 +607,29 @@ header {
   #Cloud-2 {
     top: 40%;
   }
+
   .parallax {
     background-image: linear-gradient(#fd7d7c 3%, #fc9e85 20%, #ffcba4 30%);
   }
+
   .navbar-brand {
     width: 20%;
   }
+
   #wie {
     width: 10%;
   }
+
   #Logo {
     width: 70vw;
     left: 15vw;
     margin-top: 15vh;
   }
+
   .wrapper {
     padding-bottom: 0 !important;
   }
+
   .countdown {
     height: 30vh;
     padding-top: 30%;
@@ -677,16 +691,16 @@ header {
   height: 50px;
   right: -0.2em;
   position: absolute;
-  bottom: -0.001em;
+  bottom: 3.5em;
   width: 50px;
   /* margin-bottom: 20px; */
-  margin-bottom: 1em;
+  margin-bottom: 1rw;
 }
 
 .program {
-  /* margin-bottom: 30px; */
 
-  padding: 15px;
+  /* margin-bottom: 30px; */
+  padding: 10px;
   /* padding-top: 25px; */
   margin: 0 auto 5em;
   transition: 0.6;
@@ -695,6 +709,7 @@ header {
 }
 
 .program i {
+  margin-top: 20px;
   font-size: 35px;
   color: #ff9a92;
 }
@@ -757,6 +772,13 @@ header {
 #contact p a {
   text-decoration: none;
   color: white;
+}
+
+@media (max-width:865px) {
+  #contact h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
 }
 
 /*CONTACT SECTION ENDS*/
@@ -1116,6 +1138,7 @@ footer .wave#wave4 {
 
   font-size: 30px;
 }
+
 .tracks-image-container {
   position: relative;
   display: flex;
@@ -1142,6 +1165,7 @@ footer .wave#wave4 {
   transform: rotate(270deg);
   transform-origin: 0 0;
 }
+
 .tracks-conductor-details {
   font-size: 15px;
 
@@ -1152,6 +1176,7 @@ footer .wave#wave4 {
   transform: rotate(270deg);
   transform-origin: 0 0;
 }
+
 #speaker-1-details {
   bottom: -20px;
 }
@@ -1219,9 +1244,11 @@ footer .wave#wave4 {
   .tracks-bead-odd {
     left: 3.5%;
   }
+
   .tracks-conductor-name {
     left: 40px;
   }
+
   .tracks-conductor-details {
     left: 70px;
   }
@@ -1289,6 +1316,7 @@ footer .wave#wave4 {
   .tracks-content:before {
     left: 450px;
   }
+
   #tracks-conductor-1 {
     filter: none;
   }
@@ -1302,12 +1330,15 @@ footer .wave#wave4 {
   .tracks-content:before {
     left: 350px;
   }
+
   .tracks-image-container {
     padding: 5px;
   }
+
   .tracks-conductor-name {
     font-size: 22px;
   }
+
   #speaker-1-details {
     font-size: 13px;
     bottom: -20px;
@@ -1591,6 +1622,7 @@ footer .wave#wave4 {
 }
 
 .standard-heading-style {
+  text-align: center;
   font-weight: 850;
   font-size: 60px;
   padding: 20px;
@@ -1604,27 +1636,37 @@ footer .wave#wave4 {
   align-self: center;
   margin: 20px;
 }
+
 #Partner-logo:hover {
   transform: scale(1.15);
   transition: 1s ease-in-out;
 }
+
 @media only screen and (max-width: 1020px) {
+  .standard-heading-style {
+    font-size: 40px;
+  }
+
   #Partner-heading {
     width: fit-content;
   }
 }
+
 @media only screen and (max-width: 630px) {
   #Partner-heading {
     font-size: 40px;
   }
+
   #Partner-logo {
     width: 200px;
   }
 }
+
 @media only screen and (max-width: 440px) {
   #Partner-heading {
     font-size: 30px;
   }
+
   #Partner-logo {
     width: 200px;
   }
