@@ -1,4 +1,4 @@
-var SCROLL_THRESHOLD = 220;
+var SCROLL_THRESHOLD = 225;
 var SCROLL_THRESHOLD_SUN = 150;
 
 if (window.matchMedia('(max-width: 1000px)').matches) {
@@ -24,12 +24,13 @@ if (window.matchMedia('(max-width: 601px)').matches) {
     document.getElementById('Cloud-2').style.width = '30%';
 }
 if (window.matchMedia('(max-width: 450px)').matches) {
-    var SCROLL_THRESHOLD = 0;
+    var SCROLL_THRESHOLD = 165;
     var SCROLL_THRESHOLD_SUN = 0;
 }
+
 if (window.matchMedia('(max-width: 400px)').matches) {
     var SCROLL_THRESHOLD_SUN = 8;
-    var SCROLL_THRESHOLD = 0;
+    var SCROLL_THRESHOLD = 170;
 }
 
 
@@ -37,6 +38,7 @@ const text = document.getElementById('text');
 // const layer1 = document.getElementById('Layer-1');
 const layer2 = document.getElementById('Layer-2');
 const layer3 = document.getElementById('Layer-3');
+const lay3 = document.getElementById('Layer3-2')
 const layer4 = document.getElementById('Layer-4');
 const sun = document.getElementById('Sun');
 const logo = document.getElementById('Logo');
@@ -45,10 +47,18 @@ const logo = document.getElementById('Logo');
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
 
+    if (window.matchMedia('(max-width: 450px)').matches && value > SCROLL_THRESHOLD * 1.5)
+    document.getElementById('reg-btn').style.paddingTop = '10%';
+    else 
+    {
+    document.getElementById('reg-btn').style.paddingTop = '0%';
+    }
+
+
     // layer1.style.top = value * -1 + 'px';
     layer4.style.left = -22 + (value * 0.008) + 'vw';
-    if (window.matchMedia('(min-width: 450px)').matches)
     layer3.style.left = value * -0.25 + 'px';
+    lay3.style.left = value * -0.15 + 'px';
 
     const navbar = document.querySelector('.navi');
     const nav = document.getElementById('navbar')
@@ -59,7 +69,7 @@ window.addEventListener('scroll', () => {
     else {
         navbar.classList.remove('scrolled');
         logo.style.top = value * 1 + 'px';
-        logo.style.scale = 1 + (value * 0.0012);
+        logo.style.scale = 1 + (value * 0.0009);
     }
 
     if (value > 850)

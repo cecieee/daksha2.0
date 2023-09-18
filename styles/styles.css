@@ -150,6 +150,10 @@ header {
   animation: cloudanimation 150s linear infinite;
 }
 
+#wie {
+  width: 5%;
+}
+
 @keyframes cloudanimation {
   0% {
     left: 70%;
