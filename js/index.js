@@ -48,7 +48,10 @@ window.addEventListener('scroll', () => {
     let value = window.scrollY;
 
     if (window.matchMedia('(max-width: 450px)').matches && value > SCROLL_THRESHOLD * 1.5)
-    document.getElementById('reg-btn').style.paddingTop = '10%';
+    {
+        document.getElementById('reg-btn').style.paddingTop = '10%';
+        document.getElementById('reg-btn').style.transition = '0.2s ease-in-out';
+    }
     else 
     {
     document.getElementById('reg-btn').style.paddingTop = '0%';
