@@ -943,7 +943,7 @@ footer .wave#wave4 {
   min-height: 300px;
   width: fit-content;
   letter-spacing: 1.5px;
-  word-spacing: 2px;
+  word-spacing: 0.5px;
 }
 
 .tracks-section:nth-child(odd) {
@@ -1581,6 +1581,10 @@ footer .wave#wave4 {
   width: 60%;
   justify-content: center;
   align-self: center;
+  padding: 20px;
+}
+
+.standard-heading-style {
   font-weight: 850;
   font-size: 60px;
   padding: 20px;
