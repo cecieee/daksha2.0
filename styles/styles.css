@@ -600,7 +600,13 @@ header {
     top: 40%;
   }
   .parallax {
-    background-image: linear-gradient(#fd7d7c 2%, #fc9e85 7%, #ffcba4 20%);
+    background-image: linear-gradient(#fd7d7c 3%, #fc9e85 20%, #ffcba4 30%);
+  }
+  .navbar-brand {
+    width: 20%;
+  }
+  #wie {
+    width: 10%;
   }
   #Logo {
     width: 70vw;

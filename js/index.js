@@ -24,13 +24,13 @@ if (window.matchMedia('(max-width: 601px)').matches) {
     document.getElementById('Cloud-2').style.width = '30%';
 }
 if (window.matchMedia('(max-width: 450px)').matches) {
-    var SCROLL_THRESHOLD = 175;
+    var SCROLL_THRESHOLD = 0;
     var SCROLL_THRESHOLD_SUN = 0;
 }
 
 if (window.matchMedia('(max-width: 400px)').matches) {
     var SCROLL_THRESHOLD_SUN = 8;
-    var SCROLL_THRESHOLD = 180;
+    var SCROLL_THRESHOLD = 0;
 }
 
 
@@ -71,7 +71,7 @@ window.addEventListener('scroll', () => {
     }
     else {
         navbar.classList.remove('scrolled');
-        logo.style.top = value * 1 + 'px';
+        logo.style.top = value * 0.14 + 'vh';
         logo.style.scale = 1 + (value * 0.0008);
     }
 
