@@ -58,7 +58,7 @@ window.addEventListener('scroll', () => {
     // layer1.style.top = value * -1 + 'px';
     layer4.style.left = -22 + (value * 0.008) + 'vw';
     layer3.style.left = value * -0.25 + 'px';
-    lay3.style.left = value * -0.15 + 'px';
+    lay3.style.left = value * -0.09 + 'px';
 
     const navbar = document.querySelector('.navi');
     const nav = document.getElementById('navbar')
