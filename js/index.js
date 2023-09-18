@@ -25,11 +25,11 @@ if (window.matchMedia('(max-width: 601px)').matches) {
 }
 if (window.matchMedia('(max-width: 450px)').matches) {
     var SCROLL_THRESHOLD = 0;
-    var SCROLL_THRESHOLD_SUN = 0;
+    var SCROLL_THRESHOLD_SUN = 170;
 }
 
 if (window.matchMedia('(max-width: 400px)').matches) {
-    var SCROLL_THRESHOLD_SUN = 8;
+    var SCROLL_THRESHOLD_SUN =170;
     var SCROLL_THRESHOLD = 0;
 }
 
@@ -47,7 +47,7 @@ const logo = document.getElementById('Logo');
 window.addEventListener('scroll', () => {
     let value = window.scrollY;
 
-    if (window.matchMedia('(max-width: 450px)').matches && value > SCROLL_THRESHOLD * 1.5)
+    /*if (window.matchMedia('(max-width: 450px)').matches && value > SCROLL_THRESHOLD * 1.5)
     {
         document.getElementById('reg-btn').style.paddingTop = '10%';
         document.getElementById('reg-btn').style.transition = '0.2s ease-in-out';
@@ -55,7 +55,7 @@ window.addEventListener('scroll', () => {
     else 
     {
     document.getElementById('reg-btn').style.paddingTop = '0%';
-    }
+    }*/
 
 
     // layer1.style.top = value * -1 + 'px';
@@ -82,7 +82,10 @@ window.addEventListener('scroll', () => {
 
 
     if (value < SCROLL_THRESHOLD_SUN && window.matchMedia('(min-width: 450px)').matches) {
-        sun.style.top = value * 1 + 'px';
+        sun.style.top = value * 0.15 + 'vh';
+    }
+    if (value < SCROLL_THRESHOLD_SUN && window.matchMedia('(max-width: 450px)').matches) {
+        sun.style.marginTop = value * 0.14 + 'vh';
     }
 });
 

@@ -588,8 +588,9 @@ header {
   }
   #Sun {
     width: 30%;
-    top: 35%;
+    top: 45%;
     left: 35%;
+    margin-top: 0;
   }
   #Cloud-1 {
     top: 30%;
