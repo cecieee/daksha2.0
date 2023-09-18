@@ -956,7 +956,7 @@ footer .wave#wave4 {
   min-height: 300px;
   width: fit-content;
   letter-spacing: 1.5px;
-  word-spacing: 3px;
+  word-spacing: 2px;
 }
 
 .tracks-section:nth-child(odd) {
@@ -1613,8 +1613,60 @@ footer .wave#wave4 {
   }
 }
 
-@media only screen and (min-height:1000px) {
-  #guest-image {
-    height: 40vh;
+
+
+.Partner-container{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#Partner-heading{
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-self: center;
+  font-weight: 850;
+  font-size: 60px;
+  padding:20px;
+  letter-spacing: 3px;
+}
+
+#Partner-logo{
+  width: 300px;
+  display: flex;
+  justify-items: center;
+  align-self: center;
+  margin: 20px;
+
+}
+#Partner-logo:hover{
+  transform:scale(1.5);
+  transition: 1s ease-in-out;
+  
+}
+@media only screen and (max-width:1020px) {
+  #Partner-heading{
+
+    width: fit-content;
+  }
+  
+}
+@media only screen and (max-width:630px) {
+  #Partner-heading{
+
+    font-size: 40px;
+  }
+  #Partner-logo{
+    width: 200px;
+  }
+}
+@media only screen and (max-width:440px) {
+  #Partner-heading{
+
+    font-size: 30px;
+  }
+  #Partner-logo{
+    width: 200px;
   }
 }
