@@ -3,6 +3,7 @@
 body {
   background: #190415;
   color: #ffff;
+  overflow-y: hidden;
 }
 
 .navbar {
@@ -149,6 +150,7 @@ header {
 
 #wie {
   width: 5%;
+  margin-right: 10%;
 }
 
 @keyframes cloudanimation {
@@ -647,11 +649,6 @@ header {
   .navbar {
     margin-left: 0;
     margin-right: 0;
-    display: flex;
-  }
-
-  .navbar-brand {
-    align-items: center;
   }
 }
 
@@ -696,16 +693,16 @@ header {
   border-bottom: 5px solid white;
   content: "";
   height: 50px;
-  right: -0.2em;
+  right: -1.3em;
   position: absolute;
-  bottom: 3.5em;
+  bottom: 2em;
+  /* bottom: -3.6em; */
   width: 50px;
   /* margin-bottom: 20px; */
   margin-bottom: 1rw;
 }
 
 .program {
-
   /* margin-bottom: 30px; */
   padding: 10px;
   /* padding-top: 25px; */
@@ -781,7 +778,7 @@ header {
   color: white;
 }
 
-@media (max-width:865px) {
+@media (max-width: 865px) {
   #contact h2 {
     font-weight: 800;
     font-size: 30px;
@@ -1635,7 +1632,6 @@ footer .wave#wave4 {
   font-size: 60px;
   padding: 20px;
   letter-spacing: 3px;
-
 }
 
 #Partner-logo,
@@ -1678,7 +1674,8 @@ footer .wave#wave4 {
     font-size: 40px;
   }
 
-  #Partner-logo,#Partner-logo-col {
+  #Partner-logo,
+  #Partner-logo-col {
     width: 200px;
   }
 }
@@ -1688,7 +1685,8 @@ footer .wave#wave4 {
     font-size: 30px;
   }
 
-  #Partner-logo,#Partner-logo-col {
+  #Partner-logo,
+  #Partner-logo-col {
     width: 200px;
   }
 }
