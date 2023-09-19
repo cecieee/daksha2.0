@@ -43,6 +43,15 @@ const layer4 = document.getElementById('Layer-4');
 const sun = document.getElementById('Sun');
 const logo = document.getElementById('Logo');
 
+document.getElementById('Partner-logo').addEventListener('mouseover', () => {
+    document.getElementById('Partner-logo-col').style.display = 'block';
+    document.getElementById('Partner-logo').style.display = 'none';
+});
+
+document.getElementById('Partner-logo-col').addEventListener('mouseout', () => {
+    document.getElementById('Partner-logo-col').style.display = 'none';
+    document.getElementById('Partner-logo').style.display = 'block';
+});
 
 window.addEventListener('scroll', () => {
     let value = window.scrollY;

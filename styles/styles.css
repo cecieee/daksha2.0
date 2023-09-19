@@ -1636,12 +1636,16 @@ footer .wave#wave4 {
   letter-spacing: 3px;
 }
 
-#Partner-logo {
+#Partner-logo, #Partner-logo-col {
   width: 300px;
   display: flex;
   justify-items: center;
   align-self: center;
   margin: 20px;
+}
+
+#Partner-logo-col {
+  display: none;
 }
 
 #Partner-logo:hover {
