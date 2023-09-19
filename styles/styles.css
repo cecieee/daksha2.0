@@ -649,11 +649,6 @@ header {
   .navbar {
     margin-left: 0;
     margin-right: 0;
-    display: flex;
-  }
-
-  .navbar-brand {
-    align-items: center;
   }
 }
 
