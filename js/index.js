@@ -1,6 +1,6 @@
-var loader = document.getElementById('ring');
+const loader = document.getElementById('ring');
 const nav = document.getElementById('navbar');
-var container = document.getElementById('ring-container');
+const container = document.getElementById('ring-container');
 
 window.addEventListener('load', () => {
     container.style.display = "none";
