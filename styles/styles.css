@@ -755,7 +755,7 @@ header {
 }
 
 #contact {
-  margin-top: 30px;
+  margin-top: 12vh;
   margin-bottom: 200px;
   font-family: "Rubik", sans-serif;
 }
@@ -1634,23 +1634,32 @@ footer .wave#wave4 {
   font-size: 60px;
   padding: 20px;
   letter-spacing: 3px;
+
 }
 
-#Partner-logo, #Partner-logo-col {
+#Partner-logo,
+#Partner-logo-col {
+  position: absolute;
   width: 300px;
   display: flex;
   justify-items: center;
   align-self: center;
   margin: 20px;
+  opacity: 1;
+  margin-top: 17vh;
+  transition: opacity 0.5s ease;
 }
 
 #Partner-logo-col {
-  display: none;
+  opacity: 0;
 }
 
 #Partner-logo:hover {
-  transform: scale(1.15);
-  transition: 1s ease-in-out;
+  opacity: 0;
+}
+
+#Partner-logo-col:hover {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 1020px) {
@@ -1668,7 +1677,7 @@ footer .wave#wave4 {
     font-size: 40px;
   }
 
-  #Partner-logo {
+  #Partner-logo,#Partner-logo-col {
     width: 200px;
   }
 }
@@ -1678,7 +1687,7 @@ footer .wave#wave4 {
     font-size: 30px;
   }
 
-  #Partner-logo {
+  #Partner-logo,#Partner-logo-col {
     width: 200px;
   }
 }
