@@ -3,6 +3,7 @@
 body {
   background: #190415;
   color: #ffff;
+  overflow-y: hidden;
 }
 
 .navbar {

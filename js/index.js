@@ -1,11 +1,12 @@
 const loader = document.getElementById('ring');
 const nav = document.getElementById('navbar');
 const container = document.getElementById('ring-container');
+const body = document.getElementById('body');
 
 window.addEventListener('load', () => {
     container.style.display = "none";
-    document.display = 'block';
     nav.style.display = "block";
+    body.style.overflowY = "visible";
 })
 
 var SCROLL_THRESHOLD = 225;
