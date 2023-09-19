@@ -1,6 +1,5 @@
 var loader = document.getElementById('preloader');
-const nav = document.getElementById('navbar')
-nav.style.display = 'none';
+const nav = document.getElementById('navbar');
 
 window.addEventListener('load', () => {
     loader.style.display = "none";

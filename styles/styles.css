@@ -9,6 +9,7 @@ body {
   background-color: #190415;
   text-align: center;
   background: transparent;
+  display: none;
 }
 
 .navbar-brand {
