@@ -1,4 +1,4 @@
-var loader = document.getElementById('preloader');
+var loader = document.getElementById('ring');
 const nav = document.getElementById('navbar');
 
 window.addEventListener('load', () => {
@@ -37,7 +37,7 @@ if (window.matchMedia('(max-width: 450px)').matches) {
 }
 
 if (window.matchMedia('(max-width: 400px)').matches) {
-    var SCROLL_THRESHOLD_SUN =170;
+    var SCROLL_THRESHOLD_SUN = 170;
     var SCROLL_THRESHOLD = 0;
 }
 
