@@ -7,7 +7,6 @@ window.addEventListener('load', () => {
     document.display = 'block';
     nav.style.display = "block";
 })
-
 var SCROLL_THRESHOLD = 225;
 var SCROLL_THRESHOLD_SUN = 150;
 
