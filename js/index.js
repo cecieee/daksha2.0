@@ -1,7 +1,12 @@
 var loader = document.getElementById('preloader');
+const nav = document.getElementById('navbar')
+
+if(loader) 
+nav.style.display = 'none';
 
 window.addEventListener('load', () => {
     loader.style.display = "none";
+    nav.style.display = 'block';
 })
 
 var SCROLL_THRESHOLD = 225;
@@ -79,7 +84,6 @@ window.addEventListener('scroll', () => {
     lay3.style.left = value * -0.09 + 'px';
 
     const navbar = document.querySelector('.navi');
-    const nav = document.getElementById('navbar')
 
     if (value > SCROLL_THRESHOLD * 2.6) {
         navbar.classList.add('scrolled');
