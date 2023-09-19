@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/cecieeeo/daksha.cecieee.org
+    - /bin/cp * $DEPLOYPATH
