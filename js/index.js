@@ -1,3 +1,9 @@
+var loader = document.getElementById('preloader');
+
+window.addEventListener('load', () => {
+    loader.style.display = "none";
+})
+
 var SCROLL_THRESHOLD = 225;
 var SCROLL_THRESHOLD_SUN = 150;
 
