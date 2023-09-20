@@ -14,7 +14,7 @@ body {
 }
 
 .navbar-brand {
-  width:10%;
+  width: 10%;
 }
 
 html {
@@ -758,7 +758,7 @@ header {
 }
 
 #contact {
-  margin-top: 12vh;
+  margin-top: 15vh;
   margin-bottom: 200px;
   font-family: "Rubik", sans-serif;
 }
@@ -795,8 +795,9 @@ header {
 /*FOOTER*/
 #footer-wrap {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  text-align: center;
+  /* justify-content: center; */
+  /* align-items: flex-end; */
 }
 
 footer {
@@ -809,13 +810,15 @@ footer {
   height: 120px;
   padding: 20px 50px;
   flex-direction: column;
+  margin: auto;
 }
 
 footer .social-icons {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
+  padding-inline-start: 1.2%;
   margin: 10px 0;
   flex-wrap: wrap;
 }
@@ -1681,7 +1684,8 @@ footer .wave#wave4 {
 
   #Partner-logo,
   #Partner-logo-col {
-    width: 200px;
+    /* width: 200px; */
+    width: 250px;
   }
 }
 
@@ -1692,6 +1696,6 @@ footer .wave#wave4 {
 
   #Partner-logo,
   #Partner-logo-col {
-    width: 200px;
+    width: 250px;
   }
 }
