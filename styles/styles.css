@@ -1103,7 +1103,7 @@ footer .wave#wave4 {
   cursor: pointer;
 }
 
-.tracks-inner-container:hover #tracks-conductor-1 {
+.tracks-inner-container:hover .tracks-conductor {
   transition: 0.5s ease-in-out;
   filter: none;
 }
@@ -1159,7 +1159,7 @@ footer .wave#wave4 {
   padding: 10px;
 }
 
-#tracks-conductor-1 {
+.tracks-conductor {
   width: 80%;
 
   padding: 10px 0px;
@@ -1319,6 +1319,19 @@ footer .wave#wave4 {
   .tracks-bead-odd {
     left: -4.5%;
   }
+  #speaker-1-details{
+    font-size: 10px;
+  }
+  .speaker-odd-heading{
+    font-size: 25px;
+
+  }
+  .tracks-conductor-name{
+    bottom:-10px;
+  }
+  #speaker-3-details{
+    bottom: -10px;
+  }
 }
 
 @media only screen and (max-width: 620px) {
@@ -1330,14 +1343,14 @@ footer .wave#wave4 {
     left: 450px;
   }
 
-  #tracks-conductor-1 {
+  .tracks-conductor {
     filter: none;
   }
 }
 
 @media only screen and (max-width: 540px) {
   .tracks-content {
-    width: 350px;
+    width: 375px;
   }
 
   .tracks-content:before {
@@ -1355,6 +1368,10 @@ footer .wave#wave4 {
   #speaker-1-details {
     font-size: 13px;
     bottom: -20px;
+  }
+  #tracks-conductor-3{
+    margin-left: 15px;
+    width: 75%;
   }
 }
 
