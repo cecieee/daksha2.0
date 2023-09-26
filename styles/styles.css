@@ -1684,6 +1684,46 @@ footer .wave#wave4 {
   opacity: 1;
 }
 
+.Sponsor-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#Sponsor-heading {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-self: center;
+  padding: 20px;
+}
+
+.standard-heading-style {
+  text-align: center;
+  font-weight: 850;
+  font-size: 60px;
+  padding: 20px;
+  letter-spacing: 3px;
+}
+
+#Sponsor-logo {
+  position: absolute;
+  width: 300px;
+  display: flex;
+  justify-items: center;
+  align-self: center;
+  margin-top: 22vh;
+}
+
+#Sponsor-logo:hover {
+  scale: 1.05;
+  transition: 0.6s ease-in-out;
+}
+
+#Sponsor {
+  height: 40vh;
+  margin-top: 10vh;
+}
+
 @media only screen and (max-width: 1020px) {
   .standard-heading-style {
     font-size: 40px;
