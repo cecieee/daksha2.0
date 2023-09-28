@@ -106,6 +106,7 @@
       }
       }
     </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./assets/daksha-icon.webp" />
     <link
       rel="stylesheet"
@@ -445,7 +446,7 @@
       <h1 class="standard-heading-style">Speakers</h1>
       <div class="Speakers-container">
 
-        <div class="Speakers-card">
+        <div class="Speakers-card" data-aos="fade-right" data-aos-duration="2000">
           <div class="Speakers-image-container">
               <div class="Speakers-bg-container">
                 <img src="./assets/speakers_pattern.webp" alt="" id="Speakers-bg-pattern">
@@ -457,7 +458,7 @@
             <p>Actress <br></p>
           </div>
         </div>
-        <div class="Speakers-card">
+        <div class="Speakers-card" data-aos="fade-left" data-aos-duration="2000">
           <div class="Speakers-image-container">
               <div class="Speakers-bg-container">
                 <img src="./assets/speakers_pattern.webp" alt="" id="Speakers-bg-pattern">
@@ -598,5 +599,9 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
