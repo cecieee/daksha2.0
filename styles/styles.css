@@ -1706,12 +1706,17 @@ footer .wave#wave4 {
 }
 
 #Sponsor-logo {
-  position: absolute;
+  position: relative;
   width: 300px;
   display: flex;
   justify-items: center;
   align-self: center;
-  margin-top: 22vh;
+
+}
+#Sponsor-details{
+  text-align: center;
+  word-spacing: 3px;
+  padding: 10px;
 }
 
 #Sponsor-logo:hover {
@@ -1742,7 +1747,7 @@ footer .wave#wave4 {
 
 @media only screen and (max-width: 630px) {
   #Partner-heading {
-    font-size: 40px;
+    font-size: 38px;
   }
 
   #Partner-logo,
@@ -1763,5 +1768,103 @@ footer .wave#wave4 {
   #Partner-logo,
   #Partner-logo-col {
     width: 250px;
+  }
+}
+
+/* Speakers */
+#Speakers{
+  margin-top: 2px;
+  margin-bottom: 75px;
+}
+
+.Speakers-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Speakers-card{
+  position: relative;
+  background-color: #fc6a03;
+  width:350px;
+  height:460px;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.Speakers-image-container{
+  background-color: #fc9e85;
+  width: 330px;
+  height: 330px;
+  position: absolute;
+  top: 25px;
+  right: -22px;
+
+
+}
+
+.Speakers-info{
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  line-height: 20px;
+  min-height: 92px;
+
+
+}
+.Speakers-bg-container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#Speakers-bg-pattern{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 30%;
+}
+.Speakers-name{
+  font-size: 25px;
+  font-weight:700;
+}
+.Speakers-image{
+  width: 105%;
+  height: 105%;
+  position: absolute;
+  bottom: 0;
+}
+#Speaker-2-heading{
+  font-size: 22px;
+  word-spacing: 0.5px;
+}
+
+@media only screen and (max-width: 850px) {
+  .Speakers-container{
+    flex-direction: column;
+    
+  }
+  .Speakers-card{
+    justify-self: center;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .Speakers-card{
+    width:300px;
+    height:410px;
+  }
+  .Speakers-image-container{
+
+    width: 280px;
+    height: 280px;
+    right:-15px;
   }
 }
