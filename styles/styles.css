@@ -1992,6 +1992,7 @@ footer .wave#wave4 {
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  padding-bottom: 30px;
 }
 .PE-content-container{
   display:flex;
