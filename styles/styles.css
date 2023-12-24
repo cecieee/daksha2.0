@@ -1869,3 +1869,124 @@ footer .wave#wave4 {
     right:-15px;
   }
 }
+
+.Group-Discussion{
+  display:flex;
+  gap: 100px;
+}
+.group-discussion-container
+{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.GD-content
+{
+  display: flex;
+  justify-content: center;
+  font-size:25px;
+  font-weight: 500;
+  padding-bottom: 50px;
+}
+.group-discussion-container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 150px;
+  margin-bottom: 50px;
+}
+.GD-card
+{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap:20px;
+}
+.GD-img-container
+{
+  width:200px;
+  height: 200px;
+  background-color: #D27B70;
+  border-radius: 100px;
+  display: flex;
+  position: relative;
+  
+  
+
+}
+.GD-img{
+  width:200px;
+  justify-items: start;
+  position: absolute;
+  bottom:0px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+
+}
+.GD-nametag
+{
+  font-weight: 700;
+  font-size: larger;
+}
+@media only screen and (max-width: 850px) {
+  .group-discussion-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .GD-content{
+    font-size: 18px;
+  }
+}
+
+.PE-main-container{
+  display:flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.PE-content-container{
+  display:flex;
+  width: 50vw;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding:40px;
+  border:1px solid #fff;
+
+  
+}
+.PE-content-container h1{
+  text-align: center;
+  font-weight: 600;
+}
+.PE-img{
+  width:150px;
+  margin:10px;
+  background-color: #D27B70;
+}
+.PE-sub-content-container
+{
+  display:flex;
+  
+}
+.PE-sub-content-container p{
+  text-align: justify;
+}
+@media only screen and (max-width: 850px) {
+  .PE-sub-content-container{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 1030px) {
+  .PE-content-container{
+    width: 70vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .PE-content-container{
+    width: 90vw;
+  }
