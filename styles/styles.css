@@ -4,6 +4,8 @@ body {
   background: #190415;
   color: #ffff;
   overflow-y: hidden;
+  overflow-x: hidden;
+
 }
 
 .navbar {
@@ -315,13 +317,16 @@ header {
   background-repeat: no-repeat;
   margin-top: -6rem;
 }
+
 .in-det {
   color: #190415;
   font-weight: 700;
 }
 
 @media (max-width: 580px) {
-  .in-cont, .inaug {
+
+  .in-cont,
+  .inaug {
     width: 70vw;
   }
 }
@@ -1365,17 +1370,21 @@ footer .wave#wave4 {
   .tracks-bead-odd {
     left: -4.5%;
   }
-  #speaker-1-details{
+
+  #speaker-1-details {
     font-size: 10px;
   }
-  .speaker-odd-heading{
+
+  .speaker-odd-heading {
     font-size: 25px;
 
   }
-  .tracks-conductor-name{
-    bottom:-10px;
+
+  .tracks-conductor-name {
+    bottom: -10px;
   }
-  #speaker-3-details{
+
+  #speaker-3-details {
     bottom: -10px;
   }
 }
@@ -1415,7 +1424,8 @@ footer .wave#wave4 {
     font-size: 13px;
     bottom: -20px;
   }
-  #tracks-conductor-3{
+
+  #tracks-conductor-3 {
     margin-left: 15px;
     width: 75%;
   }
@@ -1759,7 +1769,8 @@ footer .wave#wave4 {
   align-self: center;
 
 }
-#Sponsor-details{
+
+#Sponsor-details {
   text-align: center;
   word-spacing: 3px;
   padding: 10px;
@@ -1783,6 +1794,7 @@ footer .wave#wave4 {
   #Partner-heading {
     width: fit-content;
   }
+
   #Partner-logo,
   #Partner-logo-col {
     /* width: 200px; */
@@ -1801,6 +1813,7 @@ footer .wave#wave4 {
     /* width: 200px; */
     width: 250px;
   }
+
   .mail {
     margin-left: -0.5em;
   }
@@ -1818,14 +1831,14 @@ footer .wave#wave4 {
 }
 
 /* Speakers */
-#Speakers{
+#Speakers {
   margin-top: 2px;
   margin-bottom: 75px;
   overflow: hidden;
 }
 
-.Speakers-container{
-  display:flex;
+.Speakers-container {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 100px;
@@ -1833,18 +1846,18 @@ footer .wave#wave4 {
   padding-bottom: 20px;
 }
 
-.Speakers-card{
+.Speakers-card {
   position: relative;
   background-color: #fc6a03;
-  width:350px;
-  height:460px;
+  width: 350px;
+  height: 460px;
   display: flex;
   flex-direction: column;
 
 
 }
 
-.Speakers-image-container{
+.Speakers-image-container {
   background-color: #fc9e85;
   width: 330px;
   height: 330px;
@@ -1855,7 +1868,7 @@ footer .wave#wave4 {
 
 }
 
-.Speakers-info{
+.Speakers-info {
   position: absolute;
   bottom: 0px;
   text-align: center;
@@ -1866,174 +1879,194 @@ footer .wave#wave4 {
 
 
 }
-.Speakers-bg-container{
+
+.Speakers-bg-container {
   width: 100%;
   height: 100%;
   position: relative;
 }
-#Speakers-bg-pattern1, #Speakers-bg-pattern2{
+
+#Speakers-bg-pattern1,
+#Speakers-bg-pattern2 {
   position: absolute;
   width: 100%;
   height: 100%;
   opacity: 30%;
 }
-.Speakers-name{
+
+.Speakers-name {
   font-size: 25px;
-  font-weight:700;
+  font-weight: 700;
 }
-.Speakers-image{
+
+.Speakers-image {
   width: 105%;
   height: 105%;
   position: absolute;
   bottom: 0;
 }
-#Speaker-2-heading{
+
+#Speaker-2-heading {
   font-size: 22px;
   word-spacing: 0.5px;
 }
 
 @media only screen and (max-width: 850px) {
-  .Speakers-container{
+  .Speakers-container {
     flex-direction: column;
-    
+
   }
-  .Speakers-card{
+
+  .Speakers-card {
     justify-self: center;
     margin: auto;
   }
 }
 
 @media only screen and (max-width: 440px) {
-  .Speakers-card{
-    width:300px;
-    height:410px;
+  .Speakers-card {
+    width: 300px;
+    height: 410px;
   }
-  .Speakers-image-container{
+
+  .Speakers-image-container {
 
     width: 280px;
     height: 280px;
-    right:-15px;
+    right: -15px;
   }
 }
 
-.Group-Discussion{
-  display:flex;
+.Group-Discussion {
+  display: flex;
   gap: 100px;
 }
-.group-discussion-container
-{
-  display:flex;
+
+.group-discussion-container {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 100px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-.GD-content
-{
+
+.GD-content {
   display: flex;
   justify-content: center;
-  font-size:25px;
+  font-size: 25px;
   font-weight: 500;
   padding-bottom: 50px;
 }
-.group-discussion-container{
-  display:flex;
+
+.group-discussion-container {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 150px;
   margin-bottom: 50px;
 }
-.GD-card
-{
+
+.GD-card {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap:20px;
+  gap: 20px;
 }
-.GD-img-container
-{
-  width:200px;
+
+.GD-img-container {
+  width: 200px;
   height: 200px;
   background-color: #D27B70;
   border-radius: 100px;
   display: flex;
   position: relative;
-  
-  
+
+
 
 }
-.GD-img{
-  width:200px;
+
+.GD-img {
+  width: 200px;
   justify-items: start;
   position: absolute;
-  bottom:0px;
+  bottom: 0px;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
 
 }
-.GD-nametag
-{
+
+.GD-nametag {
   font-weight: 700;
   font-size: larger;
 }
+
 @media only screen and (max-width: 850px) {
-  .group-discussion-container{
+  .group-discussion-container {
     flex-direction: column;
     align-items: center;
   }
-  .GD-content{
+
+  .GD-content {
     font-size: 18px;
   }
 }
 
-.PE-main-container{
-  display:flex;
+.PE-main-container {
+  display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
   padding-bottom: 30px;
 }
-.PE-content-container{
-  display:flex;
+
+.PE-content-container {
+  display: flex;
   width: 50vw;
   flex-direction: column;
   justify-content: center;
   gap: 30px;
-  padding:40px;
-  border:1px solid #fff;
+  padding: 40px;
+  border: 1px solid #fff;
 
-  
+
 }
-.PE-content-container h1{
+
+.PE-content-container h1 {
   text-align: center;
   font-weight: 600;
 }
-.PE-img{
-  width:150px;
-  margin:20px;
+
+.PE-img {
+  width: 150px;
+  margin: 20px;
   background-color: #D27B70;
 }
-.PE-sub-content-container
-{
-  display:flex;
-  
+
+.PE-sub-content-container {
+  display: flex;
+
 }
-.PE-sub-content-container p{
+
+.PE-sub-content-container p {
   text-align: justify;
 }
+
 @media only screen and (max-width: 850px) {
-  .PE-sub-content-container{
+  .PE-sub-content-container {
     flex-direction: column;
     align-items: center;
   }
 }
+
 @media only screen and (max-width: 1030px) {
-  .PE-content-container{
+  .PE-content-container {
     width: 70vw;
   }
 }
+
 @media only screen and (max-width: 450px) {
-  .PE-content-container{
+  .PE-content-container {
     width: 90vw;
   }
+}
