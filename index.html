@@ -1,132 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      body {
-        background: #190415;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <style>
+    body {
+      background: #190415;
+    }
+
+    #ring-container {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #190415;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    #ring {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      background: #190415;
+      border: 3px solid #3c3c3c;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 150px;
+      font-family: sans-serif;
+      font-size: 20px;
+      color: #ff9a92;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px #ff9a92;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      z-index: 100;
+    }
+
+    #ring:before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      width: 104%;
+      height: 104%;
+      border: 3px solid transparent;
+      border-top: 3px solid #ff9a92;
+      border-right: 3px solid #ff9a92;
+      border-radius: 50%;
+      animation: animateC 2s linear infinite;
+      z-index: 100;
+    }
+
+    span {
+      display: block;
+      position: absolute;
+      top: calc(50% - 2px);
+      left: 50%;
+      width: 50%;
+      height: 4px;
+      background: transparent;
+      transform-origin: left;
+      animation: animate 2s linear infinite;
+      z-index: 100;
+    }
+
+    span:before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #ff9a92;
+      top: -6px;
+      right: -8px;
+      box-shadow: 0 0 20px #ff9a92;
+    }
+
+    @keyframes animateC {
+      0% {
+        transform: rotate(0deg);
       }
 
-      #ring-container {
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #190415;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 999;
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes animate {
+      0% {
+        transform: rotate(45deg);
       }
 
-      #ring {
-        position: relative;
-        width: 150px;
-        height: 150px;
-        background: #190415;
-        border: 3px solid #3c3c3c;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 150px;
-        font-family: sans-serif;
-        font-size: 20px;
-        color: #ff9a92;
-        letter-spacing: 4px;
-        text-transform: uppercase;
-        text-shadow: 0 0 10px #ff9a92;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        z-index: 100;
+      100% {
+        transform: rotate(405deg);
       }
+    }
 
-      #ring:before {
-        content: "";
-        position: absolute;
-        top: -3px;
-        left: -3px;
-        width: 104%;
-        height: 104%;
-        border: 3px solid transparent;
-        border-top: 3px solid #ff9a92;
-        border-right: 3px solid #ff9a92;
-        border-radius: 50%;
-        animation: animateC 2s linear infinite;
-        z-index: 100;
-      }
-
-      span {
-        display: block;
-        position: absolute;
-        top: calc(50% - 2px);
-        left: 50%;
-        width: 50%;
-        height: 4px;
-        background: transparent;
-        transform-origin: left;
-        animation: animate 2s linear infinite;
-        z-index: 100;
-      }
-
-      span:before {
-        content: "";
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        background: #ff9a92;
-        top: -6px;
-        right: -8px;
-        box-shadow: 0 0 20px #ff9a92;
-      }
-
-      @keyframes animateC {
-        0% {
-          transform: rotate(0deg);
-        }
-
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-
-      @keyframes animate {
-        0% {
-          transform: rotate(45deg);
-        }
-
-        100% {
-          transform: rotate(405deg);
-        }
-      }
-      @media only screen and (min-width: 850px) and (max-width: 1195px) {
-        .speaker-odd-heading{
+    @media only screen and (min-width: 850px) and (max-width: 1195px) {
+      .speaker-odd-heading {
         font-size: 25px;
 
       }
-      }
-    </style>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./assets/daksha-icon.webp" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./styles/styles.css?v=1.1" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;800;700;600;900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Daksha 2.0</title>
-  </head>
+    }
+  </style>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./assets/daksha-icon.webp" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/styles.css?v=1.1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;800;700;600;900&display=swap" rel="stylesheet" />
+  <title>Daksha 2.0</title>
+</head>
 
   <body id="body">
     <div id="ring-container">
@@ -201,18 +193,18 @@
       </nav>
     </header>
 
-    <!-- parallax  -->
-    <section class="parallax">
-      <img src="assets/homepage_layer_cloud1.webp" id="Cloud-1" alt="" />
-      <img src="assets/homepage_layer_cloud2.webp" id="Cloud-2" alt="" />
-      <img src="assets/homepage_layer_sun.webp" id="Sun" alt="" />
-      <img src="assets/layer3-2.webp" id="Layer-4" />
-      <img src="assets/layer2-mob.webp" id="Layer3-2" alt="" />
-      <img src="assets/layer2.webp" id="Layer-3" />
-      <img src="assets/layer1.webp" id="Layer-2" />
-      <!-- <img src="assets/homepage_layer1.svg" id="Layer-1"> -->
-      <img src="assets/daksha name.svg" alt="" id="Logo" />
-    </section>
+  <!-- parallax  -->
+  <section class="parallax">
+    <img src="assets/homepage_layer_cloud1.webp" id="Cloud-1" alt="" />
+    <img src="assets/homepage_layer_cloud2.webp" id="Cloud-2" alt="" />
+    <img src="assets/homepage_layer_sun.webp" id="Sun" alt="" />
+    <img src="assets/layer3-2.webp" id="Layer-4" />
+    <img src="assets/layer2-mob.webp" id="Layer3-2" alt="" />
+    <img src="assets/layer2.webp" id="Layer-3" />
+    <img src="assets/layer1.webp" id="Layer-2" />
+    <!-- <img src="assets/homepage_layer1.svg" id="Layer-1"> -->
+    <img src="assets/daksha name.svg" alt="" id="Logo" />
+  </section>
 
     <section class="register" id="reg-btn">
       <a
@@ -270,425 +262,394 @@
         </div>
       </div>
 
-      <div class="container p-lg-2 px-5">
-        <div class="row pt-3 gy-6">
-          <div class="col-lg-4 col-sm-12 col-12 col-md-3 mx-auto">
-            <div class="program text-center h-100">
-              <i class="fa fa-laptop"></i>
-              <h3>WORKSHOPS</h3>
-              <p class="pg-desc">
-                Implementing these strategies can lead to increased student
-                engagement in technical and managerial competitions, thereby
-                elevating their creative abilities.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 col-12 col-md-3 mx-auto">
-            <div class="program text-center h-100">
-              <i class="fa fa-microphone"></i>
-              <h3>NON-TECHNICAL SESSIONS</h3>
-              <p class="pg-desc">
-                Sessions encompassing interpersonal skills and broader aspects
-                of professional development.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 col-12 col-md-3 mx-auto">
-            <div class="program text-center h-100">
-              <i class="fa fa-users"></i>
-              <h3>GROUP DISCUSSIONS</h3>
-              <p class="pg-desc">
-                Participants will be grouped into smaller teams for a discussion
-                format akin to placement scenarios. Outstanding performers will
-                have the opportunity to participate in subsequent online mock
-                interviews.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row pt-3 gy-6 justify-content-center">
-          <div class="col-lg-4 col-sm-12 col-12 col-md-3">
-            <div class="program text-center h-100">
-              <i class="fa fa-suitcase"></i>
-              <h3>INTERNSHIP OPPORTUNITIES</h3>
-              <p class="pg-desc">
-                Exclusive Internship Opportunity for Top-Performing Students!
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12 col-12 col-md-3">
-            <div class="program text-center h-100">
-              <i class="fa fa-headphones"></i>
-              <h3>CULTURAL ACTIVITIES</h3>
-              <p class="pg-desc">
-                The event's first day concludes with a delightful campfire,
-                featuring live music and a diverse array of other
-                cultural programs.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="inauguration" id="inauguration">
-      <h2 class=" standard-heading-style">Inauguration</h2>
-      <div class="inaug">
-        <div class="in-cont" data-aos="fade-up" data-aos-duration="1000">
-          <div class="in-photo" data-aos="fade-up" data-aos-duration="1000"></div>
-          <div class="in-det">
-            <h5 data-aos="fade-right" data-aos-duration="1000">Dr. Bidulna Kunju</h5>
-            <p data-aos="fade-left" data-aos-duration="1000">Chairperson<br>IEEE WIE Kerala Section</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- tracks -->
-    <section id="tracks">
-      <div class="tracks-container">
-        <div class="tracks-top-section">
-          <h1 class="standard-heading-style">Tracks</h1>
-        </div>
-        <div class="tracks-timeline">
-          <div class="tracks-line"></div>
-
-          <div class="tracks-section">
-            <div class="tracks-inner-container">
-              <div class="tracks-bead"></div>
-              <div class="tracks-content">
-                <h2 class="tracks-h2">Network design</h2>
-                <p>
-                  Imagine a Network Design Workshop as your network's secret
-                  weapon, where innovation, practicality, and user-focused magic
-                  merge. It's not just a workshop; it's your golden ticket to
-                  outshine the competition, making your network's growth and
-                  success skyrocket.In this electrifying workshop, we'll dive
-                  into the art of crafting networks that don't just work – they
-                  shine. We'll unleash the creative genius within, blending
-                  visionary ideas with boots-on-the-ground feasibility. It's
-                  your chance to lead the pack, as we reveal the secrets of
-                  transforming imaginative network concepts into real-world
-                  phenomena. Don't just compete; captivate the market!
-                </p>
-                <div class="tracks-image-container">
-                  <img
-                    src="./assets/Safad_Ismail.webp"
-                    alt=""
-                    id="tracks-conductor-1"
-                  />
-
-                  <h3 class="tracks-conductor-details" id="speaker-1-details">
-                    Asst.Professor<br />
-                    Saintgits Engineering College<br />
-                    Mtech,LLB.<br />
-                  </h3>
-                  <h3 class="tracks-conductor-name speaker-odd-heading">SAFAD ISMAIL</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tracks-section">
-            <div class="tracks-inner-container">
-              <div class="tracks-bead tracks-bead-odd"></div>
-              <div class="tracks-content tracks-content-odd">
-                <h2 class="tracks-h2">Digital Twin</h2>
-                <ul>
-                  <li>
-                    Eager to dive into the cutting-edge realm of Digital Twins?
-                  </li>
-                  <li>
-                    Uncertain about where to commence this transformative
-                    journey?
-                  </li>
-                </ul>
-                <p>
-                  Digital twins, a groundbreaking technology, breathe life into
-                  virtual replicas of real-world objects or systems. They wield
-                  immense power for monitoring, analysis, simulation, and
-                  optimization. This workshop becomes your gateway to mastering
-                  the art of Digital Twins. Plus, for the winners of the
-                  hackathon, exciting internship opportunities await, making
-                  this workshop your gateway to mastering the art of Digital
-                  Twins and empowering individuals to harness
-                  their full potential.
-                </p>
-                <div class="tracks-image-container">
-                  <img
-                    src="./assets/Akhil.png"
-                    alt=""
-                    id="tracks-conductor-1"
-                  />
-
-                  <h3 class="tracks-conductor-details">
-                    Lead Unity Developer<br />
-                    XR Horizon<br />
-                  </h3>
-                  <h3 class="tracks-conductor-name">Akhil M Mani</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tracks-section">
-            <div class="tracks-inner-container">
-              <div class="tracks-bead"></div>
-              <div class="tracks-content">
-                <h2 class="tracks-h2">Dialux</h2>
-                <p>
-                  Dive into the illuminating world of Dialux, where light meets
-                  innovation. Dialux, a powerful lighting design software,
-                  illuminates spaces with creativity and precision. It's not
-                  just about lighting; it's about transforming spaces into
-                  captivating experiences. Our Dialux workshop isn't merely a
-                  practical; it's your secret weapon to stand out in the field,
-                  enhancing your skills and directly impacting your career's
-                  growth and success. This workshop is your beacon to understand
-                  the intricacies of Dialux and its real-world applications.
-                  It's not just about theory; it's hands-on, allowing you to
-                  craft and visualize lighting designs that leave a lasting
-                  impression. Unlock the potential of Dialux, and who knows,
-                  your newfound expertise might just light up your career with
-                  exciting opportunities, making you a true
-                  luminary in the field.
-                </p>
-                <div class="tracks-image-container">
-                    
-                    <img src="./assets/Track 3 (2).png" alt="" id="tracks-conductor-1">
-                
-                    <h3 class="tracks-conductor-details">Electrical Engineer<br />Lighting Enthusiast</h3>
-                    <h3 class="tracks-conductor-name speaker-odd-heading">Stalon Jessin</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Speakers -->
-    <section id="Speakers">
-      <h1 class="standard-heading-style">Speakers</h1>
-      <div class="Speakers-container">
-
-        <div class="Speakers-card" data-aos="fade-right" data-aos-duration="2000">
-          <div class="Speakers-image-container">
-              <div class="Speakers-bg-container">
-                <img src="./assets/speakers_pattern-min.png" alt="" id="Speakers-bg-pattern1">
-              </div>
-              <img src="./assets/speaker_1.webp" alt="" class="Speakers-image">
-          </div>
-          <div class="Speakers-info">
-            <p class="Speakers-name">Darshana Sudarsann</p>
-            <p>Actress <br></p>
-          </div>
-        </div>
-        <div class="Speakers-card" data-aos="fade-left" data-aos-duration="2000">
-          <div class="Speakers-image-container">
-              <div class="Speakers-bg-container">
-                <img src="./assets/speakers_pattern-min.png" alt="" id="Speakers-bg-pattern2">
-              </div>
-              <img src="./assets/speaker_2.webp" alt="" class="Speakers-image" >
-          </div>
-          <div class="Speakers-info">
-            <p class="Speakers-name" id="Speaker-2-heading">Dr Ishha Farha Quraishy</p>
-            <p>Ms Universe Solidarity<br> CEO and Founder IFQ Tech</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Group Discussion -->
-    <section id="Group-Discussion">
-      <h1 class="standard-heading-style">Group Discussion</h1>
-      <p class="GD-content">In collaboration with IEEE Young Professionals</p>
-      
-      <div class="group-discussion-container">
-        <div class="GD-card" data-aos="fade-left" data-aos-duration="1000">
-          <div class="GD-img-container" >
-            <img src="./assets/Dilber P Shakir.png" alt="" class="GD-img">
-          </div>
-          <p class="GD-nametag">Dilber P Shakir</p>
-        </div>
-        <div class="GD-card" data-aos="fade-left" data-aos-duration="1000">
-          <div class="GD-img-container" >
-            <img src="./assets/Aparna S L.png" alt="" class="GD-img">
-          </div>
-          <p class="GD-nametag">Aparna S L</p>
-        </div>
-        <div class="GD-card" data-aos="fade-left" data-aos-duration="1000">
-          <div class="GD-img-container" >
-            <img src="./assets/Govind S Nath.png" alt="" class="GD-img">
-          </div>
-          <p class="GD-nametag">Govind S Nath</p>
-        </div>
-      </div>
-      <div class="group-discussion-container">
-        <div class="GD-card" data-aos="fade-left" data-aos-duration="1000">
-          <div class="GD-img-container" >
-            <img src="./assets/Akshara Bruno.png" alt="" class="GD-img">
-          </div>
-          <p class="GD-nametag">Akshara Bruno</p>
-        </div>
-        <div class="GD-card" data-aos="fade-left" data-aos-duration="1000">
-          <div class="GD-img-container" >
-            <img src="./assets/Aravind P Unnithan.png" alt="" class="GD-img">
-          </div>
-          <p class="GD-nametag">Aravind P Unnithan</p>
-        </div>
-        <div class="GD-card" data-aos="fade-left" data-aos-duration="1000">
-          <div class="GD-img-container" >
-            <img src="./assets/Janaki Devi R.png" alt="" class="GD-img">
-          </div>
-          <p class="GD-nametag">Janaki Devi R</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PreEvent -->
-    <section class="Pre-Event">
-      <h1 class="standard-heading-style">Pre-Event</h1>
-      <div class="PE-main-container">
-        <div class="PE-content-container" data-aos="fade-up">
-          <h1>Leading Youth To New Horizons</h1>
-          <div class="PE-sub-content-container">
-            <img src="./assets/Preevent.png" alt="" class="PE-img">
-            <p>
-              The prime objective of IEEE Industry Applications Society is to lead the way in the progress of science and technology by establishing a strong link between theoretical concepts and practical applications of electrical and electronic systems. The ultimate aim of this endeavor is to provide concrete benefits to humanity. IEEE IAS SBC CEC strives to promote sustainable and economical developments towards the society.IEEE IAS SBC CEC strives to promote sustainable and economical developments towards the society.
+    <div class="container p-lg-2 px-5">
+      <div class="row pt-3 gy-6">
+        <div class="col-lg-4 col-sm-12 col-12 col-md-3 mx-auto">
+          <div class="program text-center h-100">
+            <i class="fa fa-laptop"></i>
+            <h3>WORKSHOPS</h3>
+            <p class="pg-desc">
+              Implementing these strategies can lead to increased student
+              engagement in technical and managerial competitions, thereby
+              elevating their creative abilities.
             </p>
           </div>
         </div>
-
-      </div>
-
-    </section>
-
-    <section id="Partner">
-      <div class="Partner-container">
-        <h1 id="Partner-heading" class="standard-heading-style">
-          Internship Partner
-        </h1>
-        <img
-          src="./assets/XR Horizon Logo white.png"
-          alt=""
-          id="Partner-logo"
-        />
-        <img src="./assets/XR Horizon Logo.png" alt="" id="Partner-logo-col" />
-      </div>
-    </section>
-
-    <section id="Sponsor">
-      <div class="Sponsor-container">
-        <h1 id="Sponsor-heading" class="standard-heading-style">
-          Our Sponsor
-        </h1>
-
-
-          <img
-            src="./assets/Dan.webp"
-            alt=""
-            id="Sponsor-logo">
-          <p id="Sponsor-details">
-            India's first online LLB entrance institute.
-          </p>
-
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="contact wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="text-content text-center">
-                <h2 class="standard-heading-style">Contact Us</h2>
-              </div>
-            </div>
+        <div class="col-lg-4 col-sm-12 col-12 col-md-3 mx-auto">
+          <div class="program text-center h-100">
+            <i class="fa fa-microphone"></i>
+            <h3>NON-TECHNICAL SESSIONS</h3>
+            <p class="pg-desc">
+              Sessions encompassing interpersonal skills and broader aspects
+              of professional development.
+            </p>
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="neonText">Phone Number</h3>
-
-              <p style="color: white; font-size: 110%; font-weight: 700">
-                Gouri M Menon - 9995903238
-              </p>
-              <p style="color: white; font-size: 110%; font-weight: 700">
-                Vrindha Vinod - 7561833641
-              </p>
-            </div>
-            <div class="col-md-6">
-              <h3 class="neonText">Email</h3>
-              <div class="mail">
-                <p style="color: white; font-size: 110%; font-weight: 700">
-                  <a href="mailto:%20daksha@gmail.com"
-                    >daksha2.0.2023@gmail.com</a
-                  >
-                </p>
-              </div>
-            </div>
+        </div>
+        <div class="col-lg-4 col-sm-12 col-12 col-md-3 mx-auto">
+          <div class="program text-center h-100">
+            <i class="fa fa-users"></i>
+            <h3>GROUP DISCUSSIONS</h3>
+            <p class="pg-desc">
+              Participants will be grouped into smaller teams for a discussion
+              format akin to placement scenarios. Outstanding performers will
+              have the opportunity to participate in subsequent online mock
+              interviews.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-
-    <div id="footer-wrap">
-      <footer>
-        <div class="waves">
-          <div class="wave" id="wave1"></div>
-          <div class="wave" id="wave2"></div>
-          <div class="wave" id="wave3"></div>
-          <div class="wave" id="wave4"></div>
+      <div class="row pt-3 gy-6 justify-content-center">
+        <div class="col-lg-4 col-sm-12 col-12 col-md-3">
+          <div class="program text-center h-100">
+            <i class="fa fa-suitcase"></i>
+            <h3>INTERNSHIP OPPORTUNITIES</h3>
+            <p class="pg-desc">
+              Exclusive Internship Opportunity for Top-Performing Students!
+            </p>
+          </div>
         </div>
-        <ul class="social-icons">
-          <li>
-            <a href="https://www.instagram.com/ieee_sb_cec/"
-              ><i class="fa fa-instagram"></i
-            ></a>
-            <a href="https://cecieee.org/"><i class="fa fa-google"></i></a>
-            <a href="https://www.linkedin.com/company/cecieee/"
-              ><i class="fa fa-linkedin"></i
-            ></a>
-            <a href="mailto:%20daksha@gmail.com"
-              ><i class="fa fa-envelope"></i
-            ></a>
-          </li>
-        </ul>
-        <img
-          src="./assets/daksha name2.svg"
-          alt="logo"
-          width="100px"
-          height="28px"
-        />
-        <p>Copyright&copy; <b>DAKSHA</b></p>
-      </footer>
+        <div class="col-lg-4 col-sm-12 col-12 col-md-3">
+          <div class="program text-center h-100">
+            <i class="fa fa-headphones"></i>
+            <h3>CULTURAL ACTIVITIES</h3>
+            <p class="pg-desc">
+              The event's first day concludes with a delightful campfire,
+              featuring live music and a diverse array of other
+              cultural programs.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <script>
-      $(window).on("load", function () {
-        $(".ring-container").fadeOut("slow");
-      });
-    </script>
-    <script src="./js/index.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+  </section>
+  <section class="inauguration" id="inauguration">
+    <h2 class=" standard-heading-style">Inauguration</h2>
+    <div class="inaug">
+      <div class="in-cont" data-aos="fade-up" data-aos-duration="1000">
+        <div class="in-photo" data-aos="fade-up" data-aos-duration="1000"></div>
+        <div class="in-det">
+          <h5 data-aos="fade-right" data-aos-duration="1000">Dr. Bidulna Kunju</h5>
+          <p data-aos="fade-left" data-aos-duration="1000">Chairperson<br>IEEE WIE Kerala Section</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- tracks -->
+  <section id="tracks">
+    <div class="tracks-container">
+      <div class="tracks-top-section">
+        <h1 class="standard-heading-style">Tracks</h1>
+      </div>
+      <div class="tracks-timeline">
+        <div class="tracks-line"></div>
+
+        <div class="tracks-section">
+          <div class="tracks-inner-container">
+            <div class="tracks-bead"></div>
+            <div class="tracks-content">
+              <h2 class="tracks-h2">Network design</h2>
+              <p>
+                Imagine a Network Design Workshop as your network's secret
+                weapon, where innovation, practicality, and user-focused magic
+                merge. It's not just a workshop; it's your golden ticket to
+                outshine the competition, making your network's growth and
+                success skyrocket.In this electrifying workshop, we'll dive
+                into the art of crafting networks that don't just work – they
+                shine. We'll unleash the creative genius within, blending
+                visionary ideas with boots-on-the-ground feasibility. It's
+                your chance to lead the pack, as we reveal the secrets of
+                transforming imaginative network concepts into real-world
+                phenomena. Don't just compete; captivate the market!
+              </p>
+              <div class="tracks-image-container">
+                <img src="./assets/Safad_Ismail.webp" alt="" id="tracks-conductor-1" />
+
+                <h3 class="tracks-conductor-details" id="speaker-1-details">
+                  Asst.Professor<br />
+                  Saintgits Engineering College<br />
+                  Mtech,LLB.<br />
+                </h3>
+                <h3 class="tracks-conductor-name speaker-odd-heading">SAFAD ISMAIL</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tracks-section">
+          <div class="tracks-inner-container">
+            <div class="tracks-bead tracks-bead-odd"></div>
+            <div class="tracks-content tracks-content-odd">
+              <h2 class="tracks-h2">Digital Twin</h2>
+              <ul>
+                <li>
+                  Eager to dive into the cutting-edge realm of Digital Twins?
+                </li>
+                <li>
+                  Uncertain about where to commence this transformative
+                  journey?
+                </li>
+              </ul>
+              <p>
+                Digital twins, a groundbreaking technology, breathe life into
+                virtual replicas of real-world objects or systems. They wield
+                immense power for monitoring, analysis, simulation, and
+                optimization. This workshop becomes your gateway to mastering
+                the art of Digital Twins. Plus, for the winners of the
+                hackathon, exciting internship opportunities await, making
+                this workshop your gateway to mastering the art of Digital
+                Twins and empowering individuals to harness
+                their full potential.
+              </p>
+              <div class="tracks-image-container">
+                <img src="./assets/Akhil.png" alt="" id="tracks-conductor-1" />
+
+                <h3 class="tracks-conductor-details">
+                  Lead Unity Developer<br />
+                  XR Horizon<br />
+                </h3>
+                <h3 class="tracks-conductor-name">Akhil M Mani</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tracks-section">
+          <div class="tracks-inner-container">
+            <div class="tracks-bead"></div>
+            <div class="tracks-content">
+              <h2 class="tracks-h2">Dialux</h2>
+              <p>
+                Dive into the illuminating world of Dialux, where light meets
+                innovation. Dialux, a powerful lighting design software,
+                illuminates spaces with creativity and precision. It's not
+                just about lighting; it's about transforming spaces into
+                captivating experiences. Our Dialux workshop isn't merely a
+                practical; it's your secret weapon to stand out in the field,
+                enhancing your skills and directly impacting your career's
+                growth and success. This workshop is your beacon to understand
+                the intricacies of Dialux and its real-world applications.
+                It's not just about theory; it's hands-on, allowing you to
+                craft and visualize lighting designs that leave a lasting
+                impression. Unlock the potential of Dialux, and who knows,
+                your newfound expertise might just light up your career with
+                exciting opportunities, making you a true
+                luminary in the field.
+              </p>
+              <div class="tracks-image-container">
+
+                <img src="./assets/Track 3 (2).png" alt="" id="tracks-conductor-1">
+
+                <h3 class="tracks-conductor-details">Electrical Engineer<br />Lighting Enthusiast</h3>
+                <h3 class="tracks-conductor-name speaker-odd-heading">Stalon Jessin</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Speakers -->
+  <section id="Speakers">
+    <h1 class="standard-heading-style">Speakers</h1>
+    <div class="Speakers-container">
+
+      <div class="Speakers-card" data-aos="fade-right" data-aos-duration="2000">
+        <div class="Speakers-image-container">
+          <div class="Speakers-bg-container">
+            <img src="./assets/speakers_pattern-min.png" alt="" id="Speakers-bg-pattern1">
+          </div>
+          <img src="./assets/speaker_1.webp" alt="" class="Speakers-image">
+        </div>
+        <div class="Speakers-info">
+          <p class="Speakers-name">Darshana Sudarsann</p>
+          <p>Actress <br></p>
+        </div>
+      </div>
+      <div class="Speakers-card" data-aos="fade-left" data-aos-duration="2000">
+        <div class="Speakers-image-container">
+          <div class="Speakers-bg-container">
+            <img src="./assets/speakers_pattern-min.png" alt="" id="Speakers-bg-pattern2">
+          </div>
+          <img src="./assets/speaker_2.webp" alt="" class="Speakers-image">
+        </div>
+        <div class="Speakers-info">
+          <p class="Speakers-name" id="Speaker-2-heading">Dr Ishha Farha Quraishy</p>
+          <p>Ms Universe Solidarity<br> CEO and Founder IFQ Tech</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Group Discussion -->
+  <section id="Group-Discussion">
+    <h1 class="standard-heading-style">Group Discussion</h1>
+    <p class="GD-content">In collaboration with IEEE Young Professionals</p>
+
+    <div class="group-discussion-container">
+      <div class="GD-card" data-aos="fade-left" data-aos-duration="1000">
+        <div class="GD-img-container">
+          <img src="./assets/Dilber P Shakir.png" alt="" class="GD-img">
+        </div>
+        <p class="GD-nametag">Dilber P Shakir</p>
+      </div>
+      <div class="GD-card" data-aos="fade-left" data-aos-duration="1000">
+        <div class="GD-img-container">
+          <img src="./assets/Aparna S L.png" alt="" class="GD-img">
+        </div>
+        <p class="GD-nametag">Aparna S L</p>
+      </div>
+      <div class="GD-card" data-aos="fade-left" data-aos-duration="1000">
+        <div class="GD-img-container">
+          <img src="./assets/Govind S Nath.png" alt="" class="GD-img">
+        </div>
+        <p class="GD-nametag">Govind S Nath</p>
+      </div>
+    </div>
+    <div class="group-discussion-container">
+      <div class="GD-card" data-aos="fade-left" data-aos-duration="1000">
+        <div class="GD-img-container">
+          <img src="./assets/Akshara Bruno.png" alt="" class="GD-img">
+        </div>
+        <p class="GD-nametag">Akshara Bruno</p>
+      </div>
+      <div class="GD-card" data-aos="fade-left" data-aos-duration="1000">
+        <div class="GD-img-container">
+          <img src="./assets/Aravind P Unnithan.png" alt="" class="GD-img">
+        </div>
+        <p class="GD-nametag">Aravind P Unnithan</p>
+      </div>
+      <div class="GD-card" data-aos="fade-left" data-aos-duration="1000">
+        <div class="GD-img-container">
+          <img src="./assets/Janaki Devi R.png" alt="" class="GD-img">
+        </div>
+        <p class="GD-nametag">Janaki Devi R</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PreEvent -->
+  <section class="Pre-Event">
+    <h1 class="standard-heading-style">Pre-Event</h1>
+    <div class="PE-main-container">
+      <div class="PE-content-container" data-aos="fade-up">
+        <h1>Leading Youth To New Horizons</h1>
+        <div class="PE-sub-content-container">
+          <img src="./assets/Preevent.png" alt="" class="PE-img">
+          <p>
+            The prime objective of IEEE Industry Applications Society is to lead the way in the progress of science and
+            technology by establishing a strong link between theoretical concepts and practical applications of
+            electrical and electronic systems. The ultimate aim of this endeavor is to provide concrete benefits to
+            humanity. IEEE IAS SBC CEC strives to promote sustainable and economical developments towards the
+            society.IEEE IAS SBC CEC strives to promote sustainable and economical developments towards the society.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="Partner">
+    <div class="Partner-container">
+      <h1 id="Partner-heading" class="standard-heading-style">
+        Internship Partner
+      </h1>
+      <img src="./assets/XR Horizon Logo white.png" alt="" id="Partner-logo" />
+      <img src="./assets/XR Horizon Logo.png" alt="" id="Partner-logo-col" />
+    </div>
+  </section>
+
+  <section id="Sponsor">
+    <div class="Sponsor-container">
+      <h1 id="Sponsor-heading" class="standard-heading-style">
+        Our Sponsor
+      </h1>
+
+
+      <img src="./assets/Dan.webp" alt="" id="Sponsor-logo">
+      <p id="Sponsor-details">
+        India's first online LLB entrance institute.
+      </p>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="text-content text-center">
+              <h2 class="standard-heading-style">Contact Us</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="neonText">Phone Number</h3>
+
+            <p style="color: white; font-size: 110%; font-weight: 700">
+              Gouri M Menon - 9995903238
+            </p>
+            <p style="color: white; font-size: 110%; font-weight: 700">
+              Vrindha Vinod - 7561833641
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h3 class="neonText">Email</h3>
+            <div class="mail">
+              <p style="color: white; font-size: 110%; font-weight: 700">
+                <a href="mailto:%20daksha@gmail.com">daksha2.0.2023@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-wrap">
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.instagram.com/ieee_sb_cec/"><i class="fa fa-instagram"></i></a>
+          <a href="https://cecieee.org/"><i class="fa fa-google"></i></a>
+          <a href="https://www.linkedin.com/company/cecieee/"><i class="fa fa-linkedin"></i></a>
+          <a href="mailto:%20daksha@gmail.com"><i class="fa fa-envelope"></i></a>
+        </li>
+      </ul>
+      <img src="./assets/daksha name2.svg" alt="logo" width="100px" height="28px" />
+      <p>Copyright&copy; <b>DAKSHA</b></p>
+    </footer>
+  </div>
+  <script>
+    $(window).on("load", function () {
+      $(".ring-container").fadeOut("slow");
+    });
+  </script>
+  <script src="./js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
