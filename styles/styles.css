@@ -1919,6 +1919,7 @@ footer .wave#wave4 {
 .Group-Discussion{
   display:flex;
   gap: 100px;
+  overflow-x: hidden;
 }
 .group-discussion-container
 {
@@ -1993,6 +1994,7 @@ footer .wave#wave4 {
   justify-items: center;
   align-items: center;
   padding-bottom: 30px;
+  overflow-y: hidden;
 }
 .PE-content-container{
   display:flex;
