@@ -93,7 +93,7 @@ window.addEventListener('scroll', () => {
         logo.style.scale = 1 + (value * 0.0008);
     }
 
-    if (value > 850)
+    if (value > 550)
         nav.classList.add('scrolled');
     else
         nav.classList.remove('scrolled');
